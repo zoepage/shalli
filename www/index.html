@@ -127,9 +127,26 @@
     this is the decision / new route
 
     <h2>Index Content:</h2>
-    {{input type="text" placeholder="Which title?" valueBinding="model.title" }}<br />
-    {{input type="text" placeholder="Which description?" valueBinding="model.description" }}
-    {{input type="text" placeholder="Which url?" valueBinding="model.url" }}
+
+    <h3> Samples </h3>
+    {{#each hardcodedSamples}}
+        <div style="background-color: green; color: white;">
+            {{id}} - <input type="radio" value="{{id}}" name="sample" onChange="addSampleCriteria(1);" />
+<br />
+            <b>{{title}}</b><br />
+            {{description}}
+        </div>
+    {{/each}}
+
+    {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
+    {{textarea cols="80" rows="6" placeholder="Description" valueBinding="model.description" }}<br />
+    {{input type="text" placeholder="Link" valueBinding="model.url" }} <br />
+
+    <div class="sample-criteria">
+
+    </div>
+
+
     <button {{action "createDecision" target="controller"}}>Pseudo Submit</button>
 </script>
 
@@ -160,6 +177,8 @@
 
     <!-- Ember base stuff -->
     <script src="assets/vendor/ember-hoodie/ember-hoodie-adapter.js"></script>
+    <script src="assets/js/hardcoded_sampled.js"></script>
+    <script src="assets/js/functions/dirty.js"></script>
     <script src="assets/js/shalli.js"></script>
     <script src="assets/js/router.js"></script>
     <!--<script src="assets/js/hoodie_events.js"></script>-->
