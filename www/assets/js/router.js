@@ -5,8 +5,7 @@
  */
 
 ShallI.Router.map(function() {
-	this.resource('decisions', function() {
-		this.resource('new'),
-		this.resource('decisions_id')
-	}),
+	this.resource('decisions');
+	this.resource('decision', { path: '/decision/:decision_id' });
+	this.resource('decision.new', { path: '/decision/new'});
 });
