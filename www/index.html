@@ -34,16 +34,35 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/vendor/skeleton/images/apple-touch-icon-114x114.png">
 
 </head>
-<body>
+<body class="signedout">
 
 	<!-- Primary Page Layout
 	================================================== -->
 
 	<!-- Delete everything in this .container and get started on your own site! -->
+    <div id="login" class="sixteen columns container">
+        <div class="list">
+                    <form>
+                        <div class="hd">
+                            <h2> 
+                                Sign-in / -up <span class="hoodie-username"><!-- usern name will be filled in here --></span>
+                            </h2>
+                        </div>
+                        <div class="bd">
+                            <input id="usr" class="" type="text" name="username" placeholder="username"><br />
+                            <input id="pw" class="" type="password" name="password" placeholder="password"><br />
+                            <!--<input class="" type="password" name="password_confirmation" placeholder="password confirmation">-->
+                        </div>
+                        <div class="ft">
+                            <button type="submit" class="btn btn-primary">submit</button>
+                        </div>
+                    </form>
+                </div>
+    </div>
 
 <script type="text/x-handlebars">       
     
-	<div class="container">
+	<div id="stage" class="container" >
 		<div class="sixteen columns">
 			
 			<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
