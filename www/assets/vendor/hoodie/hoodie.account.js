@@ -17,7 +17,7 @@ $(function() {
       hoodie.account.signIn( $('#usr').val(), $('#pw').val() ).then(
           function(event, done) {
 
-            $('body').removeClass('signedout').addClass('signedin');
+   //         $('body').removeClass('signedout').addClass('signedin');
   
       //      $('.hoodie-account-signedin').fadeIn();   
             $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username).attr('color', 'red');
