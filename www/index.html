@@ -99,7 +99,6 @@
                 Will be removed if the application is working "a little bit"
             -->
             <ul>
-                <li>{{#link-to "decision"}}decision{{/link-to}}</li>
                 <li>{{#link-to "decision.new"}}decision new{{/link-to}}</li>
                 <li>{{#link-to "decisions"}}decisions{{/link-to}}</li>
             </ul>
@@ -111,25 +110,44 @@
 </script>
 
 <script type="text/x-handlebars" id="decisions">
-	this is the decisions route
+	This is the list of current decisions!
 	<ul>
 	    {{#each}}
-	        <li>{{title}}</li>
+	        <li>{{#link-to "decision" id}}{{title}}{{/link-to}}</li>
 	    {{/each}}
 	</ul>
 </script>
 
 <script type="text/x-handlebars" id="decision">
-	this is the decision / new route
+	Detail view of a decision
+
+	<h1>{{title}}</h1>
 </script>
 
 <script type="text/x-handlebars" id="decision/new">
     this is the decision / new route
 
     <h2>Index Content:</h2>
-    {{input type="text" placeholder="Which title?" valueBinding="model.title" }}<br />
-    {{input type="text" placeholder="Which description?" valueBinding="model.description" }}
-    {{input type="text" placeholder="Which url?" valueBinding="model.url" }}
+
+    <h3> Samples </h3>
+    {{#each hardcodedSamples}}
+        <div style="background-color: green; color: white;">
+            {{unbound id}} - <input type="radio" value="{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
+<br />
+            <b>{{title}}</b><br />
+            {{description}}
+        </div>
+    {{/each}}
+
+    {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
+    {{textarea cols="80" rows="6" placeholder="Description" valueBinding="model.description" }}<br />
+    {{input type="text" placeholder="Link" valueBinding="model.url" }} <br />
+
+    <div class="sample-criteria">
+
+    </div>
+
+
     <button {{action "createDecision" target="controller"}}>Pseudo Submit</button>
 </script>
 
@@ -160,6 +178,8 @@
 
     <!-- Ember base stuff -->
     <script src="assets/vendor/ember-hoodie/ember-hoodie-adapter.js"></script>
+    <script src="assets/js/hardcoded_sampled.js"></script>
+    <script src="assets/js/functions/dirty.js"></script>
     <script src="assets/js/shalli.js"></script>
     <script src="assets/js/router.js"></script>
     <!--<script src="assets/js/hoodie_events.js"></script>-->
