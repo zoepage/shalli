@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>e_card</title>
+	<title>Shall I?</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -51,59 +51,63 @@
 	<div class="container">
 		<div class="sixteen columns">
 			
-			<!-- START hoodie-accountbar -->
 			<div class="hoodie-accountbar">
-			
-				<div class="hoodie-account-signedout">
-					<span class="btn-group">
-						<button class="btn" data-hoodie-action="signup">Sign Up</button>
-						<button class="btn dropdown-toggle" data-toggle="dropdown">
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li><a href="#" data-hoodie-action="signin">Sign In</a></li>
-							<li><a href="#" data-hoodie-action="resetpassword">Reset Password</a></li>
-							<li><a href="#" data-hoodie-action="destroy">Clear local data</a></li>
-						</ul>
-					</span>
-				</div><!-- hoodie-account-signedout -->
+        <!--
+            <div class="hoodie-account-signedout">
+                  <a class="btn-big" data-hoodie-action="signup">Sign Up</a>
+                  <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#" data-hoodie-action="signin">Sign In</a></li>
+                    <li><a href="#" data-hoodie-action="resetpassword">Reset Password</a></li>
+                    <li><a href="#" data-hoodie-action="destroy">Clear local data</a></li>
+                  </ul>
+            </div>
+            /.hoodie-account-signedin -->
+    
+            <div class="hoodie-account-signedin">
+                Hello,
+                <span class="hoodie-username"><!-- usern name will be filled in here --></span>
 
-				<div class="hoodie-account-signedin">
-					Hello,
-					<span class="hoodie-username"><!-- usern name will be filled in here --></span>
-					<span class="btn-group">
-						<button class="btn" data-hoodie-action="signout">Sign Out</button>
-						<button class="btn dropdown-toggle" data-toggle="dropdown">
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li><a href="#" data-hoodie-action="changepassword">Change Password</a></li>
-							<li><a href="#" data-hoodie-action="changeusername">Change Username</a></li>
-							<li><a href="#" data-hoodie-action="destroy">Destroy Account</a></li>
-						</ul>
-					</span>
-				</div><!-- hoodie-account-signedin -->
+                <a class="btn-big" data-hoodie-action="signout">Sign Out</a>
+                <!-- 
+                    <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
 
-				<div class="hoodie-account-error">
-					Hello,
-					<span class="hoodie-username"><!-- usern name will be filled in here --></span>.
-					<span class="btn-group">
-						<button class="btn btn-danger" data-hoodie-action="signin">Authentication error: Sign in again</button>
-						<button class="btn dropdown-toggle btn-danger" data-toggle="dropdown">
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li><a href="#" data-hoodie-action="signout">Sign out</a></li>
-						</ul>
-					</span>
-				</div><!-- hoodie-account-error -->
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#" data-hoodie-action="changepassword">Change Password</a></li>
+                        <li><a href="#" data-hoodie-action="changeusername">Change Username</a></li>
+                        <li><a href="#" data-hoodie-action="destroy">Delete Account</a></li>
+                        <li><a href="mailto:o.gasidlo@gmail.com?subject=Bugreport eat.There" title="send bugreport">bugreport</a></li>
+                        <li><a href="https://www.gittip.com/zoepage/" target="_blank" title="donate">GITTIP</a></li>
+                    </ul>
+                  -->     
+            </div><!-- /.hoodie-account-signedin -->
 
-			</div><!-- hoodie-acountbar -->
-			<!-- END hoodie-accountbar -->
+            <div class="hoodie-account-error">
+                Hello,
+                <span class="hoodie-username"><!-- usern name will be filled in here --></span>.
+
+                <span class="btn-group">
+                    <a class="btn-big btn-danger" data-hoodie-action="signin">Authentication error: Sign in again</a>
+                <!--
+                    <button class="btn-big dropdown-toggle btn-danger" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#" data-hoodie-action="signout">Sign out</a></li>
+                    </ul>
+                -->
+                </span>
+            </div> <!-- /.hoodie-account-error -->
+        </div> 
+        <!-- END hoodie-accountbar -->
 		</div>
 		
 		<div class="sixteen columns">
-			<h1>shall I</h1>
+			<h1>Shall I?</h1>
 			<h2>Your hoodie in the pocket</h2>
 			<hr />
 		</div><!-- sixteen columns -->
@@ -132,9 +136,7 @@
     <!-- Load the dynamic version of hoodie.js that includes all the plugin code-->
     <script src="/_api/_files/hoodie.js"></script>
 
-    <script src="assets/vendor/hoodie.accountbar.bootstrap.js"></script>
-    <script src="assets/vendor/bootstrap.modalform.js"></script>
-
+   
     <script src="bower_components/jquery/dist/jquery.js"></script>
   	<script src="bower_components/handlebars/handlebars.js"></script>
   	<script src="bower_components/ember/ember.js"></script>
