@@ -9,3 +9,7 @@ ShallI.Router.map(function() {
 	this.resource('decision', { path: '/decision/:decision_id' });
 	this.resource('decision.new', { path: '/decision/new'});
 });
+
+ShallI.DecisionNewRoute = Ember.Route.extend({
+
+});
