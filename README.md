@@ -23,5 +23,5 @@ main.css (OO-CSS structure)
 + layout.css 
 + modules.css
 
-main.js
+shalli.js
 + init hoodie
