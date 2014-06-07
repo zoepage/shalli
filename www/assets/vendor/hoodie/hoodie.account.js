@@ -31,7 +31,7 @@ $(function() {
     });
 
     hoodie.account.on('signin', function (user) {
-      window.location.href = "index.html";       
+      window.location.href = "index.html";
     });
 
     hoodie.account.on('signout', function (user) {
@@ -42,13 +42,17 @@ $(function() {
     hoodie.account.on('unauthenticated', function (user) { 
       alert('unautth') 
     });    
+
+    hoodie.account.on('authenticated', function (user) {
+      alert('auth');
+    });
     
 
-
+/*
     hoodie.account.on('signin', function (user) {
         $('html').attr('data-hoodie-account-status', 'signedin');
         $('.hoodie-accountbar').find('.hoodie-username').text(username).attr('color', 'red');
         alert('DRIN');
     });
-
+*/
 });
