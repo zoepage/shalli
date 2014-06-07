@@ -6,10 +6,122 @@
 
 @import "layout.css";	/* define your layout */
 @import "modules.css";	/* specs for your modules */
+@import "color.css";	/* specs for your modules */
+@import "typo.css";	/* specs for your modules */
 
 /*
 @import "grid.css"; 	// put your grid in here like .1of3
 @import "colour.css"; 	// all the colours like .blue
 @import "typo.css"; 	// all definitions for typo, font-sizes etc.
 @import "icon.css"; 	// all the icons you use
+*/
+
+
+#wrapper {
+  width: 100%;
+  max-width: 720px;
+  margin: 2% auto;
+}
+
+
+
+/*
+// Optimize for sanity on homepage
+.slogan {
+  font-size: 32px;
+  font-weight: 100;
+  color: $dark-grey;
+}
+
+nav {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $grey;
+  font-size: 22px;
+}
+
+// dashboard: ongoing list-style
+li.ongoing {
+  font-weight: bold;
+  color: $dark-grey;
+  font-size: 22px;
+}
+
+li.ongoing .time-left {
+  font-size: 18px;
+  font-weight: normal;
+  color: $grey;
+}
+
+// dashboard: past list-style
+li.past-decision {
+  padding: 40px;
+  color: white;
+}
+
+li.past-decisions.nay {
+  background-color: $red;
+}
+
+li.past-decisions.yay {
+  background-color: $red;
+}
+
+// decision view list-style
+li.criteria {
+  font-size: 32px;
+  font-weight: bold;
+  color: $dark-grey;
+}
+
+li.criteria span {
+  font-weight: 100;
+  color: red;
+}
+
+li.criteria.active {
+  color: white;
+  background: $red;
+  span {
+    color: $dark-red;
+  }
+}
+
+input[type=text], input[type=email], textarea {
+  font-size: 32px;
+  font-weight: 100;
+  color: $grey;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid $grey;
+}
+
+input[type=submit] {
+  padding: 10px 12px;
+  border-radius: 50px; // oder so
+  &.green {
+    border: 4px solid $green;
+    color: $green;
+    &:hover {
+      background-color: $green;
+      color: white;
+    }
+  }
+  &.red {
+    border: 4px solid $red;
+    color: $red;
+    &:hover {
+      background-color: $red;
+      color: white;
+    }
+  }
+  &.white {
+    border: 4px solid white;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $green;
+    }
+  }
+}
 */

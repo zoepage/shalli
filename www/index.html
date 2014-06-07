@@ -34,7 +34,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/vendor/skeleton/images/apple-touch-icon-114x114.png">
 
 </head>
-<body class="signedin">
+<body class="signedin" id="wraper">
 
 	<!-- Primary Page Layout
 	================================================== -->
@@ -42,49 +42,45 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
     <div id="login" class="sixteen columns container">
         <div class="list">
-                    <form>
-                        <div class="hd">
-                            <h2> 
-                                Sign-in / -up <span class="hoodie-username"><!-- usern name will be filled in here --></span>
-                            </h2>
-                        </div>
-                        <div class="bd">
-                            <input id="usr" class="" type="text" name="username" placeholder="username"><br />
-                            <input id="pw" class="" type="password" name="password" placeholder="password"><br />
-                            <!--<input class="" type="password" name="password_confirmation" placeholder="password confirmation">-->
-                        </div>
-                        <div class="ft">
-                            <button type="submit" class="btn btn-primary">submit</button>
-                        </div>
-                    </form>
+            <form>
+                <div class="hd">
+                    <h2> 
+                        Sign-in / -up <span class="hoodie-username"><!-- usern name will be filled in here --></span>
+                    </h2>
                 </div>
+                <div class="bd">
+                    <input id="usr" class="" type="text" name="username" placeholder="username"><br />
+                    <input id="pw" class="" type="password" name="password" placeholder="password"><br />
+                    <!--<input class="" type="password" name="password_confirmation" placeholder="password confirmation">-->
+                </div>
+                <div class="ft">
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </div>
+            </form>
+        </div>
     </div>
-
    
     
 	<div class="container" >
 		<div class="sixteen columns">
-			
 			<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
-
                 <div class="hoodie-account-signedin">
-                Hello,
-                <span class="hoodie-username"></span>
-
-                <a href="#" class="logout">Sign Out</a>
-                 
+                    Hello <span class="hoodie-username"></span>, <a href="#" class="logout">Sign Out</a>
                 </div> 
-
-           
             </div> 
 		</div>
     </div>
 <script type="text/x-handlebars"> 
     <div class="container" id="stage">   	
     		<div class="sixteen columns">
-				<h1>Shall I?</h1>
-				<h2>Your hoodie in the pocket</h2>
-				<hr />
+				<h1 class="red">shalli</h1>
+				<h2 class="small">optimized for sanity</h2>
+				<p class="grey">
+                    Bacon ipsum dolor sit amet beef ribs pork sausage pancetta pig meatloaf drumstick short loin chicken
+                    pork chop bacon. Bacon chicken ham kevin flank. Tri-tip short ribs ribeye turducken flank prosciutto,
+                    turkey meatloaf capicola. Pork chop leberkas boudin meatball.
+                </p>
+                <h2 class="darkgrey">Signing up just takes seconds</h2>
 			</div>
 
 			<!--
@@ -167,6 +163,9 @@
     <script src="assets/js/controllers/decision_controller.js"></script>
     <script src="assets/js/controllers/decision_new_controller.js"></script>
     <script src="assets/js/controllers/decisions_controller.js"></script>
+
+    <script type="text/javascript" src="http://use.typekit.net/hjq4dad.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!-- End Document
 ================================================== -->

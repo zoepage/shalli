@@ -1,0 +1,42 @@
+body {
+  font-family: "effra", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  font-family: "effra", Arial, Helvetica, sans-serif;
+}
+
+/* shalli logo on homepage */
+h1 {
+  font-size: 100px;
+  margin-top: 115px;
+}
+
+/* eg: Signing up just takes a second */
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+/* shalli logo anywhere else */
+h2.small {
+font-size: 36px;
+font-weight: 300;
+margin-top: 25px;
+margin-bottom: 50px;
+}
+
+h3 {
+
+}
+
+/* random text */
+p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin-bottom: 80px;
+}
