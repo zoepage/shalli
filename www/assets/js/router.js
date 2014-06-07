@@ -14,7 +14,13 @@ ShallI.DecisionNewRoute = Ember.Route.extend({
     model: function(){
         return this.store.createRecord('decision');
     },
-    setupController : function(controller, model){
+    setupController: function(controller, model){
         controller.set('model', model);
+    }
+});
+
+ShallI.DecisionsRoute = Ember.Route.extend({
+    model: function() {
+        return this.store.find('decision');
     }
 });
