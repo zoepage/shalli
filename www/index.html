@@ -110,7 +110,13 @@
 </script>
 
 <script type="text/x-handlebars" id="decision/new">
-	this is the decision / new route
+    this is the decision / new route
+
+    <h2>Index Content:</h2>
+    {{input type="text" placeholder="Which title?" valueBinding="model.title" }}<br />
+    {{input type="text" placeholder="Which description?" valueBinding="model.description" }}
+    {{input type="text" placeholder="Which url?" valueBinding="model.url" }}
+    <button {{action "createDecision" target="controller"}}>Pseudo Submit</button>
 </script>
 
     <!--

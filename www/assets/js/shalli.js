@@ -8,4 +8,4 @@ window.ShallI = Ember.Application.create();
  *
  * @link  https://github.com/gr2m/ember-hoodie-adapter
  */
-ShallI.ApplicationAdapter = DS.FixtureAdapter.extend();
+ShallI.ApplicationAdapter = DS.HoodieAdapter.extend();
