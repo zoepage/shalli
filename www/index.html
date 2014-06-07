@@ -132,7 +132,7 @@
     <h3> Samples </h3>
     {{#each hardcodedSamples}}
         <div style="background-color: green; color: white;">
-            {{id}} - <input type="radio" value="{{id}}" name="sample" onChange="addSampleCriteria(1);" />
+            {{unbound id}} - <input type="radio" value="{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
 <br />
             <b>{{title}}</b><br />
             {{description}}

@@ -12,7 +12,7 @@ function addSampleCriteria(sampleValue) {
 
     // Choose sample
     $(ShallISamples).each(function(key, val) {
-        if (val.id === sampleValue) {
+        if (val.id == sampleValue) {
             chosenSample = val;
         }
     });
