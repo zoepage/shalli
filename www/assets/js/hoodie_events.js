@@ -5,7 +5,7 @@
 // listen for account events
 // user has signed up (this also triggers the authenticated event, see below)
 hoodie.account.on('signup', function (user) {
-	console.log(console.log(););
+	console.log(user);
 });
 
 // user has signed in (this also triggers the authenticated event, see below)
@@ -72,16 +72,24 @@ hoodie.store.on('change', function (eventName, changedObject) {
 // =================================================
 
 // new doc created
-hoodie.remote.on('add', function (newObject) {});
+hoodie.remote.on('add', function (newObject) {
+	console.log(newObject);
+});
 
 // existing doc updated
-hoodie.remote.on('update', function (updatedObject) {});
+hoodie.remote.on('update', function (updatedObject) {
+	console.log(updatedObject);
+});
 
 // doc removed
-hoodie.remote.on('remove', function (removedObject) {});
+hoodie.remote.on('remove', function (removedObject) {
+	console.log(removedObject);
+});
 
 // any of the events above
-hoodie.remote.on('change', function (eventName, changedObject) {});
+hoodie.remote.on('change', function (eventName, changedObject) {
+	console.log(eventName, changedObject);
+});
 
 // all listeners can be filtered by type
 //hoodie.remote.on('add:note',    function (newObject) {});
