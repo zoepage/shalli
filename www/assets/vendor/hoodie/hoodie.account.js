@@ -11,8 +11,6 @@ $(function() {
       var inputs = {};
       var $form = $(event.target);
 
-      alert($('#usr').val());
-
 // rewirte -> single page application and use it!
       hoodie.account.signIn( $('#usr').val(), $('#pw').val() ).then(
           function(event, done) {
@@ -34,7 +32,7 @@ $(function() {
     });
 
     hoodie.account.on('signin', function (user) {
-      window.location.href = "index.html/decisions";
+      window.location.href = "#/decisions";
     });
 
     hoodie.account.on('signout', function (user) {
@@ -49,17 +47,4 @@ $(function() {
     hoodie.account.on('authenticated', function (user) {
       alert('auth');
     });
-    
-
-
-/*
-    
-  hoodie.account.on('signin', function (user) {
-      window.location.href = "index.html";
-      alert('hoodie.account.username');
-
-      $('.hoodie-account-signedin').fadeIn();   
-      $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username).attr('color', 'red');
-    });
-*/
 });
