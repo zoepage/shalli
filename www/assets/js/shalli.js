@@ -4,14 +4,14 @@ var hoodie  = new Hoodie();
 window.ShallI = Ember.Application.create();
 
 /**
+ * Ember hoodie datastore
  *
- * @TODO replace with hoodie
  * @link  https://github.com/gr2m/ember-hoodie-adapter
  */
-ShallI.ApplicationAdapter = DS.FixtureAdapter.extend();
+ShallI.ApplicationAdapter = DS.HoodieAdapter.extend();
 
 window.hoodie.account.on('signout', function (user) {
-	window.location.href = 'login.html';
+    window.location.href = 'login.html';
 });
 
 window.hoodie.account.on('unauthenticated', function (user) {
