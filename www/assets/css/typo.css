@@ -19,13 +19,17 @@ h2 {
   font-weight: bold;
 }
 
-
 /* shalli logo anywhere else */
 h2.small {
-font-size: 36px;
-font-weight: 300;
-margin-top: 25px;
-margin-bottom: 50px;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.slogan {
+  	font-size: 32px;
+  	font-weight: 100;
+  	margin-top: 25px;
+	margin-bottom: 50px;
 }
 
 h3 {
@@ -38,5 +42,12 @@ p {
   font-size: 22px;
   font-weight: normal;
   line-height: 1.3em;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+
+nav {
+  font-weight: bold;
+  text-transform: uppercase;
+/*  color: $grey; */
+  font-size: 22px;
 }

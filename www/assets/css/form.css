@@ -1,0 +1,48 @@
+input[type=text], input[type=password], input[type=email], textarea {
+  font-size: 32px;
+  font-weight: 100;
+  /*color: $grey; */
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #9A9A9A;
+}
+
+input[type=submit],
+button[type=submit] {
+  padding: 10px 12px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: white;
+}
+
+  input[type=submit].green,
+  button[type=submit].green {
+    border: 4px solid #50E38F;
+  }
+  
+  input[type=submit]:hover.green,
+  button[type=submit]:hover.green  {
+    background-color: #50E38F;
+    color: white;
+  }
+  
+  input[type=submit].red,
+  button[type=submit].red {
+    border: 4px solid #E35050;
+  }
+ 
+  input[type=submit]:hover.red,
+  button[type=submit]:hover.red{
+      background-color: #E35050;
+      color: white;
+  }
+  /*
+  &.white {
+    border: 4px solid white;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $green;
+    }
+  }
