@@ -1,4 +1,4 @@
-ShallI.DecisionsController = Ember.ObjectController.extend({
+ShallI.DecisionsController = Ember.ArrayController.extend({
     actions: {
         // Add actions here
     }

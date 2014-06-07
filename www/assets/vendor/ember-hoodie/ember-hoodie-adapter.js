@@ -18,18 +18,16 @@
 
     init: function() {
       hoodie.remote.on('change', function() {
-        console.log('handle change!', arguments)
+        console.log('handle change!', arguments);
       });
     },
 
     find: function(store, type, id/*, opts*/) {
       return wrapJqueryPromise( hoodie.store.find(type.typeKey, id) );
-
     },
 
     findAll: function (store, type) {
       return wrapJqueryPromise( hoodie.store.findAll(type.typeKey) );
-
     },
 
     createRecord: function (store, type, record) {
@@ -42,7 +40,6 @@
 
     deleteRecord: function (store, type, record) {
       return wrapJqueryPromise( hoodie.store.remove(type.typeKey, record.id) );
-
     }
   });
 }());
