@@ -18,7 +18,6 @@
 
 	<!-- Vendor CSS
 	================================================== -->
-  	<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/vendor/skeleton/base.css">
 	<link rel="stylesheet" href="assets/vendor/skeleton/skeleton.css">
 	<link rel="stylesheet" href="assets/vendor/skeleton/layout.css">
@@ -128,19 +127,33 @@
 	this is the decision / index route
 </script>
 
-    <script src="assets/vendor/jquery-2.1.0.min.js"></script>
-    <script src="assets/vendor/bootstrap/bootstrap.js"></script>
-    <!-- Load the dynamic version of hoodie.js that includes all the plugin code-->
+    <!--
+        The complete shitload of javascript!
+        So cute, isn`t it? <3
+
+        @TODO If we put this into production, maybe the minified versions are better.
+              Currently we are using debugging versions.
+    -->
+    <!--
+        Hood.ie
+        + jQuery deps
+        Load the dynamic version of hoodie.js that includes all the plugin code
+    -->
+    <script src="assets/vendor/jquery/jquery-2.1.1.js"></script>
     <script src="/_api/_files/hoodie.js"></script>
+    <script src="assets/vendor/hoodie/hoodie.accountbar.bootstrap.js"></script>
 
-   
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-  	<script src="bower_components/handlebars/handlebars.js"></script>
-  	<script src="bower_components/ember/ember.js"></script>
-  	<script src="bower_components/ember-data/ember-data.js"></script>
+    <!--
+        Ember.js
+        + handlebar deps
+        + self coded ShallI app :)
+    -->
+    <script src="assets/vendor/handlebars/handlebars.js"></script>
+    <script src="assets/vendor/ember/ember.js"></script>
+    <script src="assets/vendor/ember/ember-data.js"></script>
 
-	<script src="assets/js/shalli.js"></script>
-	<script src="assets/js/router.js"></script>
+    <script src="assets/js/shalli.js"></script>
+    <script src="assets/js/router.js"></script>
     <!--<script src="assets/js/hoodie_events.js"></script>-->
     <script src="assets/js/models/decision.js"></script>
     <script src="assets/js/models/group.js"></script>
