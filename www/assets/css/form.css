@@ -1,19 +1,24 @@
 input[type=text], input[type=password], input[type=email], textarea {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 100;
-  /*color: $grey; */
-  padding: 10px;
+  color: #9A9A9A;
+  padding: 15px 10px;
   border: none;
-  border-bottom: 1px solid #9A9A9A;
+  text-align: center;
+}
+input[type=text], input[type=email], textarea {
+  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
 }
 
 input[type=submit],
 button[type=submit] {
-  padding: 10px 12px;
+  padding: 12px 18px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
   background: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
   input[type=submit].green,
