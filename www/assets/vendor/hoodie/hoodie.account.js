@@ -16,14 +16,16 @@ $(function() {
 // rewirte -> single page application and use it!
       hoodie.account.signIn( $('#usr').val(), $('#pw').val() ).then(
           function(event, done) {
-            alert('drin');
-            window.location.href = 'index.html';   
-            
-            /* -- showing hoodie-accountbar and handling event ---
+            window.location.href = 'index.html#/decisions';   
+/*
+            $('.hoodie-account-signedin').fadeIn();   
+            $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username).attr('color', 'red');
+  */          
+            /* -- showing hoodie-accountbar and handling event --- */
             $('html').attr('data-hoodie-account-status', 'signedin');
             $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.user).attr('color', 'red');
-            */
-      }, function(event, error) {
+            
+            }, function(event, error) {
         $('.bd').prepend('<div class="alert alert-error">Username or password are wrong!<br /><br /> Please try again!</div>');
       });
 
@@ -31,7 +33,7 @@ $(function() {
     });
 
     hoodie.account.on('signin', function (user) {
-      window.location.href = "index.html";
+      window.location.href = "index.html/decisions";
     });
 
     hoodie.account.on('signout', function (user) {
@@ -48,11 +50,15 @@ $(function() {
     });
     
 
+
 /*
-    hoodie.account.on('signin', function (user) {
-        $('html').attr('data-hoodie-account-status', 'signedin');
-        $('.hoodie-accountbar').find('.hoodie-username').text(username).attr('color', 'red');
-        alert('DRIN');
+    
+  hoodie.account.on('signin', function (user) {
+      window.location.href = "index.html";
+      alert('hoodie.account.username');
+
+      $('.hoodie-account-signedin').fadeIn();   
+      $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username).attr('color', 'red');
     });
 */
 });
