@@ -5,7 +5,8 @@
 /* --- Hoodie Sign In / Sign Up / Sign out stylings --- */
 /* hide contents until we know if user is signed in or not */
 body.signedout #stage,
-body.signedin #login {
+body.signedin #login,
+body.signedout .hoodie-accountbar {
   display: none;
 }
 

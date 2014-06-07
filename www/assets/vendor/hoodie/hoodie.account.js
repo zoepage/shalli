@@ -18,7 +18,7 @@ $(function() {
    //         $('body').removeClass('signedout').addClass('signedin');
   
       //      $('.hoodie-account-signedin').fadeIn();   
-            $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username).attr('color', 'red');
+            $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username);
            
             /* -- showing hoodie-accountbar and handling event --- 
             $('html').attr('data-hoodie-account-status', 'signedin');
@@ -31,14 +31,20 @@ $(function() {
       
     });
 
+    $('.logout').bind('click' , function(e){
+      hoodie.account.signOut();
+      $('body').removeClass('signedin').addClass('signedout');
+    });
+    
+/*
     hoodie.account.on('signin', function (user) {
-      window.location.href = "#/decisions";
+      
     });
 
     hoodie.account.on('signout', function (user) {
-       window.location.href = 'login.html';
+       
     });
-
+*/
 
     hoodie.account.on('unauthenticated', function (user) { 
       alert('unautth') 
