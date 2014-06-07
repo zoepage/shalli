@@ -9,3 +9,8 @@ window.ShallI = Ember.Application.create();
  * @link  https://github.com/gr2m/ember-hoodie-adapter
  */
 ShallI.ApplicationAdapter = DS.FixtureAdapter.extend();
+
+// Added this for version 0.14
+ShallI.Store = DS.Store.extend({
+   adapter: DS.RESTAdapter.create()
+});
