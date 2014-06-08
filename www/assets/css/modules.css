@@ -139,3 +139,20 @@ li.criteria.active {
 li.criteria.active span {
 color: #820707;
 }
+
+.decision-past {
+  color: white;
+  margin-bottom: 80px;
+}
+
+.decision-past span {
+  font-weight: 500 !important;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.decision-past p {
+  font-weight: bold;
+  font-size: 100px;
+}
+
