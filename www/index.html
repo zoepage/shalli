@@ -100,86 +100,6 @@
 
     <div class="greenBg containerBg sIn">
         <div class="container">
-<<<<<<< HEAD
-            <h2 class="slogan white">shalli</h2>
-            <div class="clear"></div>
-            <h2 class="white small">Create decision</h2>
-            <p class="white">Create a decision by picking one of the templates!</p>
-            <ul class="past-decision">
-                <li class=""><span class="title"><h4>Freelancer</h4>Bacon ipsum dolor sit amet beef ribs pork sausage pancetta pig meatloaf drumstick short loin chicken pork chop bacon. </span><button href="#" type="new" class="green">CREATE</button></li>
-                <li class=""><span class="title"><h4>Open Source</h4>Bacon ipsum dolor sit amet beef ribs pork sausage pancetta pig meatloaf drumstick short loin chicken pork chop bacon. </span><button href="#" type="new" class="green">CREATE</button></li>
-            </ul>
-        </div>
-    </div>
-    <br /><br /><br /><br />
-    <div class="greenBg containerBg sIn">
-        <div class="container">
-            <h2 class="slogan white">shalli</h2> 
-            <div class="clear"></div>
-        </div>
-    </div>
-    <div class="container sIn">
-        <h2>Description</h2>
-        <form id="newDecision">
-            <input type="text" value="" placeholder="What are you deciding?" /><br/>
-            <textarea value="" placeholder="Description"></textarea><br />
-            <input type="text" value="" placeholder="http:// to GitHub Issue" />
-
-            <h2>Sharing</h2>
-            <textarea value="" placeholder="Email adresses"></textarea><br />
-<!--
-            <h2>Time</h2>
-            <input id="1day" class="green" type="radio" name="time" value="1day" /><label for="1day">1 day</label>    
-            <input class="green" type="radio" name="time" value="1week" /><label for="1day">1 week</label>    
-            <input class="green" type="radio" name="time" value="3week" /><label for="1day">3 weeks</label>     
--->
-            <button type="submit" class="green">PUBLISH</button>
-        </form>
-    </div>
-<br /><br /><br /><br />
-    <div class="whiteBg containerBg sIn">
-        <div class="container">
-            <h2 class="slogan red">shalli</h2>
-            <div class="clear"></div>
-            <h2 class="dark-grey small">
-                Company xyz would love to hire me to design a corporate identity
-            </h2>
-            <p class="grey">
-                Jowl shoulder jerky, strip steak venison bacon rump porchetta biltong turkey shankle pork. Pork meatball andouille frankfurter brisket. Cow shankle kielbasa, rump pork belly drumstick t-bone .
-            </p>
-        </div>
-        <ul class="past-decision">
-                <li class="criteria">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay?
-                    </span>
-                    <input type="checkbox" name="" value="x" id="yaybox">
-                    <label for="yaybox"><span></span></label>
-                </li>
-                <li class="criteria">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay? 
-                    </span>
-                    <input type="checkbox" name="" value="x" id="yaybox">
-                    <label for="yaybox"><span></span></label>
-                </li>
-                <li class="criteria active">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay? 
-                    </span>
-                    <input type="checkbox" name="" value="x" id="yaybox">
-                    <label for="yaybox"><span></span></label>
-                </li>
-            </ul>
-    </div>
-
-    <div class="greenBg containerBg sIn">
-        <div class="container">
-=======
->>>>>>> 43963d25f3f566b9ce6d2ff819a9d72a8dcd1fda
             <h2 class="slogan white">shalli</h2> 
             <div class="clear"></div>
         </div>
@@ -261,8 +181,8 @@
                 </span>
 
                 <!-- TODO ids mal unique machen + wenn selected die klasse active -->
-                {{input type="checkbox" class="criteria-checkbox" id="yaybox"}}
-                <label for="yaybox"><span></span></label>
+                <input type="checkbox" class="criteria-checkbox" onChange="addActiveClassToCritera(this);" id="yaybox-{{unbound _view.contentIndex}}" />
+                <label for="yaybox-{{unbound _view.contentIndex}}"><span></span></label>
             </li>
             {{/each}}
         </ul>
