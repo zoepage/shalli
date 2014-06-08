@@ -34,19 +34,17 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/vendor/skeleton/images/apple-touch-icon-114x114.png">
 
 </head>
-<body class="" id="wraper">
+<body class="signedin" id="wraper">
 
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div class="container" >
-		<div class="sixteen columns">
-			<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
-                <div class="hoodie-account-signedin">
-                    Hello <span class="hoodie-username"></span>, <a href="#" class="logout">Sign Out</a>
-                </div> 
+	<div class="container sIn">
+		<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
+            <div class="hoodie-account-signedin">
+                Hello <span class="hoodie-username"></span>, <a href="#" class="logout grey">Sign Out</a>
             </div> 
-		</div>
+        </div> 
     </div>
 <!--
     <div class="container">
@@ -59,7 +57,7 @@
         </nav>
     </div>
  -->
-    <div class="container" id="stage">   	
+    <div class="container sOut" id="stage">   	
 		<div class="">
 			<h1 class="red">shalli</h1>
 			<h2 class="slogan">optimize for sanity</h2>
@@ -71,7 +69,7 @@
     </div>
 
     <!-- Delete everything in this .container and get started on your own site! -->
-    <div id="login" class="container">
+    <div id="login" class="container sOut">
         <div class="list">
             <form>
                 <div class="hd">
@@ -91,7 +89,7 @@
         </div>
     </div>
 
-    <div class="container decision-list">
+    <div class="container decision-list sIn">
         <button href="#" type="new" class="green">CREATE</button>
         <div class="clear"></div>
         <h2 class="small">Ongoing Decisions</h2>
@@ -106,8 +104,8 @@
         </ul>
     </div>
 
-<<<<<<< HEAD
-    <div class="greenBg containerBg">
+
+    <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
             <div class="clear"></div>
@@ -145,7 +143,7 @@
         </form>
     </div>
 <br /><br /><br /><br />
-    <div class="whiteBg containerBg">
+    <div class="whiteBg containerBg sIn">
         <div class="container">
             <h2 class="slogan red">shalli</h2>
             <div class="clear"></div>
@@ -182,15 +180,8 @@
     </div>
 
 
-
-
-<!-- Here starts the Ember Stuff
-    -------------------------------------------------------------------------------------------->
-    
-=======
->>>>>>> 2e3580f260191675aee6df9b038545460a505bb9
     <script type="text/x-handlebars">
-    <div class="container">  
+    <div class="container sIn">  
 			<!--
                 Dummy / debugging links
                 Will be removed if the application is working "a little bit"
@@ -216,7 +207,7 @@
 </script>
 
 <script type="text/x-handlebars" id="decision">
-    <div class="whiteBg containerBg">
+    <div class="whiteBg containerBg sIn">
         <div class="container">
             <h2 class="slogan red">shalli</h2>
             <div class="clear"></div>
@@ -246,7 +237,7 @@
 </script>
 
 <script type="text/x-handlebars" id="decision/new">
-    <div class="greenBg containerBg">
+    <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
             <div class="clear"></div>
@@ -267,13 +258,13 @@
         </div>
     </div>
     <br /><br /><br /><br />
-    <div class="greenBg containerBg">
+    <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
             <div class="clear"></div>
         </div>
     </div>
-    <div class="container">
+    <div class="container sIn">
         <h2>Description</h2>
         <form id="newDecision">
             {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
