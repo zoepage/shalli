@@ -50,6 +50,11 @@ body.signedin .sOut{
 		width: 470px;
 	}
 
+  .ongoing .span.title a {
+    color: #2c2c2c;
+    text-decoration: none;
+  }
+
 	.past-decision span.title {
 		padding: 0 35px;
 		width: 470px;
