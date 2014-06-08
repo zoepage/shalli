@@ -15,8 +15,8 @@ h1 {
 
 /* eg: Signing up just takes a second */
 h2 {
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 900;
 }
 
 /* shalli logo anywhere else */
@@ -36,8 +36,8 @@ h2.small {
 	margin-bottom: 50px;
 }
 
-h3 {
-
+h4 {
+	font-weight: 600;
 }
 
 /* random text */
