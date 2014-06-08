@@ -31,3 +31,17 @@
 .clear {
 	clear: both;
 }
+
+#newDecision h2 {
+	margin-top: 60px;
+}
+
+.whiteBg .grey {
+	margin-top: 30px;
+}
+
+.whiteBg .container h2.dark-grey,
+.whiteBg .container p {
+	width: 470px;
+	margin: 0 auto 30px;
+}

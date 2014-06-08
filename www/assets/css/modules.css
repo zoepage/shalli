@@ -109,12 +109,12 @@ li.yay {
 	margin-left: -17px;
 	margin-top: 31px; 
 }
-/*
+
 // decision view list-style
 li.criteria {
   font-size: 32px;
   font-weight: bold;
-  color: $dark-grey;
+  color: #2c2c2c;
 }
 
 li.criteria span {
@@ -124,8 +124,9 @@ li.criteria span {
 
 li.criteria.active {
   color: white;
-  background: $red;
-  span {
-    color: $dark-red;
+  background: #E35050;
+ }
+  li.criteria.active span {
+    color: #820707;
   }
 }

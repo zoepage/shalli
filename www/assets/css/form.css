@@ -14,7 +14,7 @@ input[type=text], input[type=email], textarea {
 
 input[type=submit],
 button {
-  padding: 10px 20px;
+  padding: 7px 20px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -49,26 +49,33 @@ button {
   }
 
   button:focus,
-  input:focus {
+  input:focus,
+  textarea:focus {
     outline: none;
+    outline: 0; 
+    background-color: #fafafa;
+    border: 0 none;
   }
 
   #newDecision {
     text-align: center;
+
   }
 
   #newDecision input,
   #newDecision textarea {
-    width: 550px;
+    width: 360px;
   }
 
   #newDecision textarea {
     height: 120px;
   }
 
-  #newDecision button[type=submit] {
-    position: absolute;
-    top: -155px;
+  #newDecision button[type=submit].green {
+    margin-top: 65px;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
   }
   
   input[type=submit].white,
@@ -87,3 +94,6 @@ button {
   .bd {
     margin-top: 20px;
   }
+input[type=radio] {
+  display: none;  
+}
