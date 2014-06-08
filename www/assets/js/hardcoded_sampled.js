@@ -1,8 +1,8 @@
 var ShallISamples = [
     {
         id: 1,
-        title: 'Shall I? – Freelancer Edition',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum ultrices condimentum. Donec tempus metus hendrerit cursus varius',
+        title: 'Freelancer Edition',
+        description: 'Got a new inquiry for project or want to make another decision with impact on your working life? Just pick this template, adjust it by adding what matters to you personally and then make your decision quick and easily. Optimized for your sanity and peace of mind.',
         criteria: [
             // Positive: Level 1
             {
@@ -110,8 +110,8 @@ var ShallISamples = [
     },
     {
         id: 2,
-        title: 'Shall I? – Open Source Edition',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum ultrices condimentum. Donec tempus metus hendrerit cursus varius',
+        title: 'Open Source Edition',
+        description: 'Your community is discussing implementing an issue or new feature? Take this template, adjust it to your community's core values, share it with your community members. Shall I even integrates with GitHub so everyone is always up-to-date! And then just wait until everyone filled in the decision and we'll deliver you the final decision. Optimized for your community\'s flow and culture.',
         criteria: [
             {
                 title: 'It supports our overall vision',
