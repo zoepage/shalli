@@ -83,7 +83,7 @@ li.yay {
 .containerBg h2.slogan {
 	position: relative;
 	float: left;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 .containerBg h2.small {
@@ -123,10 +123,13 @@ li.criteria span {
 }
 
 li.criteria.active {
+  margin-top: 0 !important;
   color: white;
   background: #E35050;
  }
   li.criteria.active span {
     color: #820707;
   }
-}
+  li.criteria.active h4 {
+    color: white;
+  }
