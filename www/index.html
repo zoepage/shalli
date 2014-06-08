@@ -122,12 +122,16 @@
 	Detail view of a decision
 
 	<h1>{{title}}</h1>
-    {{#each sample}} {{title}} {{points}} {{/each}}
 	<p>{{description}}</p>
 	<p>{{url}}</p>
-	<p>{{sample}}</p>
 
->>>>>>> dde978b6a38f6826806a4f6bda2770b042625206
+    <table>
+    {{#each sample}}
+        <tr><td>{{title}} {{points}}</td><td>{{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}</td></tr>
+    {{/each}}
+    </table>
+
+    <button class="submitDecision" {{action "submitDecision" target="controller"}}>Pseudo Submit</button>
 </script>
 
 <script type="text/x-handlebars" id="decision/new">
