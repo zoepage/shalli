@@ -4,7 +4,10 @@ ShallI.ApplicationController = Ember.ObjectController.extend({
     },*/
     actions: {
         // Add actions here
-    }
+    },
+    updateCurrentPath: function() {
+        ShallI.set('currentPath', this.get('currentPath'));
+    }.observes('currentPath')
 
     // Add controller properties here
 });

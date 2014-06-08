@@ -14,7 +14,9 @@ ShallI.Router.map(function() {
 
 ShallI.ApplicationRoute = Ember.Route.extend({
     redirect: function() {
-        this.transitionTo('decisions');
+        if (!ShallI.get('currentPath') || ShallI.get('currentPath') === 'index') {
+            this.transitionTo('decisions');
+        }
     }
 });
 

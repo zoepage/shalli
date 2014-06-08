@@ -1,7 +1,9 @@
 // initialize Hoodie
 var hoodie  = new Hoodie();
 
-window.ShallI = Ember.Application.create();
+window.ShallI = Ember.Application.create({
+    currentPath: '',
+});
 
 /**
  * Ember hoodie datastore
