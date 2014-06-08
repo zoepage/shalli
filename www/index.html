@@ -93,22 +93,6 @@
         </div>
     </div>
 
-    <div class="container decision-list sIn">
-        <button href="#" type="new" class="green">CREATE</button>
-        <div class="clear"></div>
-        <h2 class="small">Ongoing Decisions</h2>
-        <ul class="ongoing">
-            <li class=""><span class="icon go"></span><span class="title">Shall we all hate Ember?</span><span class="time-left">2 days left</span></li>
-            <li class=""><span class="icon done"></span><span class="title">Shall we ever do a project in Ember again?</span><span class="time-left">1 day left</span></li>
-        </ul>
-        <h2 class="small">Past Decisions</h2>
-        <ul class="past-decision">
-            <li class="yay"><span class="title">Shall we all hate Ember? I really, really want to kill this wonderfull language!</span><span class="time-left">2 days ago</span></li>
-            <li class="nay"><span class="title">Shall we ever do a project in Ember again?</span><span class="time-left">1 day ago</span></li>
-        </ul>
-    </div>
-
-
     <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
@@ -208,7 +192,6 @@
         </div>
     </div>
 
-
     <script type="text/x-handlebars">
     <div class="container sIn">  
 			<!--
@@ -227,12 +210,24 @@
 </script>
 
 <script type="text/x-handlebars" id="decisions">
-	This is the list of current decisions!
-	<ul>
-	    {{#each}}
-	        <li>{{#link-to "decision" id}}{{title}}{{/link-to}}</li>
-	    {{/each}}
-	</ul>
+    <div class="container decision-list sIn">
+        <button href="#" type="new" class="green">CREATE</button>
+        {{#link-to "decision.new"}}decision new{{/link-to}}
+        <div class="clear"></div>
+        <h2 class="small">Ongoing Decisions</h2>
+        <ul class="ongoing">
+            <li></li>
+            {{#each}}
+	        <li class=""><span class="icon go"></span><span class="title">{{#link-to "decision" id}}{{title}}{{/link-to}}</span><span class="time-left">2 days left</span></li>
+	        {{/each}}
+            <li class=""><span class="icon done"></span><span class="title">Shall we ever do a project in Ember again?</span><span class="time-left">1 day left</span></li>
+        </ul>
+        <h2 class="small">Past Decisions</h2>
+        <ul class="past-decision">
+            <li class="yay"><span class="title">Shall we all hate Ember? I really, really want to kill this wonderfull language!</span><span class="time-left">2 days ago</span></li>
+            <li class="nay"><span class="title">Shall we ever do a project in Ember again?</span><span class="time-left">1 day ago</span></li>
+        </ul>
+    </div>
 </script>
 
 <script type="text/x-handlebars" id="decision">
