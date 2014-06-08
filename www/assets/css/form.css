@@ -8,8 +8,12 @@ input[type=text], input[type=password], input[type=email], textarea {
   font-family: "effra", Arial, Helvetica, sans-serif !important;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=email], input[type=password] {
   border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+}
+
+#pw2 {
+  border: none;
 }
 
 input[type='submit'],
@@ -133,4 +137,8 @@ input[type=radio] {
 
 .sample-criteria input[type=text] {
     text-align: left;
+}
+
+#login button[type=submit] {
+  margin: 20px 0;
 }

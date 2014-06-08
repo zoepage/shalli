@@ -12,7 +12,23 @@ $(function() {
       var $form = $(event.target);
 
 // rewirte -> single page application and use it!
-      hoodie.account.signIn( $('#usr').val(), $('#pw').val() ).then(
+
+      var usrV  = $('#usr').val();
+      var pwV   = $('#pw').val();
+      var pwVrep   = $('#pw2').val();
+
+
+
+      console.log('usr: ' + usrV + ' pw: ' + pwV + ' pw2: ' + pwVrep);
+     
+      if (pwVrep.length > 0) {
+         fcn = hoodie.account.signUp(usrV, pwV, pwVrep);
+      } else {
+        var fcn = hoodie.account.signIn(usrV, pwV);
+      };
+ 
+
+      fcn.then(
           function(event, done) {
 
             $('body').removeClass('signedout').addClass('signedin');
