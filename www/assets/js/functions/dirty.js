@@ -46,11 +46,11 @@ function addSampleCriteria(sampleValue) {
 }
 
 function addActiveClassToCritera(element) {
-    $(element).parent("li.criteria").addClass('active');
+    $(element).parent("li.criteria").toggleClass('active');
 }
 
 function scrollTo(toElement) {
     $('html, body').animate({
         scrollTop: $(toElement).offset().top
-    }, 2000);
+    }, 1500);
 }
