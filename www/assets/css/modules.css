@@ -6,7 +6,8 @@
 /* hide contents until we know if user is signed in or not */
 body.signedout #stage,
 body.signedin #login,
-body.signedout .hoodie-accountbar {
+body.signedout .hoodie-accountbar,
+body .hoodie-account-signedin {
   display: none;
 }
 
@@ -110,7 +111,6 @@ li.yay {
 	margin-top: 31px; 
 }
 
-// decision view list-style
 li.criteria {
   font-size: 32px;
   font-weight: bold;
