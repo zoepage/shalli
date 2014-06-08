@@ -44,3 +44,7 @@ function addSampleCriteria(sampleValue) {
 
     $('.sample-criteria-list').show();
 }
+
+function addActiveClassToCritera(element) {
+    $(element).parent("li.criteria").addClass('active');
+}

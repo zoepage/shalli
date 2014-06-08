@@ -256,8 +256,8 @@
                 </span>
 
                 <!-- TODO ids mal unique machen + wenn selected die klasse active -->
-                {{input type="checkbox" class="criteria-checkbox" id="yaybox"}}
-                <label for="yaybox"><span></span></label>
+                <input type="checkbox" class="criteria-checkbox" onChange="addActiveClassToCritera(this);" id="yaybox-{{unbound _view.contentIndex}}" />
+                <label for="yaybox-{{unbound _view.contentIndex}}"><span></span></label>
             </li>
             {{/each}}
         </ul>
