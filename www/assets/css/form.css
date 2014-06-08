@@ -106,7 +106,7 @@ input[type="checkbox"]:checked + label span {
 
   #newDecision button[type=submit].green {
     margin-top: 65px;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 0.05em;
   }

@@ -112,13 +112,14 @@ li.yay {
 }
 
 li.criteria {
-  font-size: 32px;
+  /*font-size: 32px;*/
   font-weight: bold;
   color: #2c2c2c;
 }
 
 li.criteria span {
   font-weight: 100;
+  font-size: 21px;
   color: red;
 }
 
