@@ -14,15 +14,6 @@ ShallI.DecisionController = Ember.ObjectController.extend({
 			opinionsHashMap[hoodie.account.username] = opinions;
         	
         	this.get('model').set('opinions', opinionsHashMap);
-        	/*var decision = this.store.createRecord('decision', {
-				title: this.get('model.title'),
-                description: this.get('model.description'),
-                url: this.get('model.url'),
-                isCompleted: false,
-                sample: this.get('model.sample'),
-                member: {},
-                opinions: opinionsHashMap
-        	});*/
 
         	//  @TODO save more properties
 
