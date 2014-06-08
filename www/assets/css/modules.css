@@ -18,10 +18,19 @@ body.signedin .sOut{
 		float: right;
 	}
 
+	.decision-list .create-button-link {
+		margin-top: 15px;
+	}
+
 .ongoing,
 .past-decision {
 	margin: 20px auto;
 	width:650px;
+}
+
+.ongoing .title a {
+	text-decoration: none;
+	color:#2c2c2c;
 }
 
 .ongoing li,
