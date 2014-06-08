@@ -1,6 +1,6 @@
-# Shall I? 
+# Shall I! 
 
-#### Optimized for Sanity
+#### We keep you sane! 
 
 
 [http://shalli.antilab.de]

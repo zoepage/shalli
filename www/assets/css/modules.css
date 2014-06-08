@@ -64,7 +64,7 @@ body.signedin .sOut {
 /* dashboard: past list-style */
 .past-decision li {
   color: white;
-  /*padding:;*/
+  padding:;
 }
 
  li.nay {
@@ -90,26 +90,26 @@ li.yay {
 	margin-top: 95px;
 }
 
-.containerBg ul {
-    margin-top: 50px;
-    margin-bottom: 105px;
-}
-
-.containerBg ul li {
-    margin-top: 10px;
-}
-
 .containerBg ul li .title {
 	width: 433px;
 }
 
+.containerBg ul li:first-child {
+	margin-top: 60px;
+}
+
+.containerBg ul li:last-child {
+	margin-top: 10px;
+	margin-bottom: 105px;
+}
+
 .containerBg ul li button {
-	position: absolute;
+	position: absolute;	
 	margin-left: -17px;
 	margin-top: 31px; 
 }
 
-/* decision view list-style */
+// decision view list-style
 li.criteria {
   font-size: 32px;
   font-weight: bold;
@@ -125,7 +125,7 @@ li.criteria.active {
   color: white;
   background: #E35050;
  }
-
-li.criteria.active span {
+  li.criteria.active span {
     color: #820707;
+  }
 }
