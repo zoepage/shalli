@@ -136,8 +136,9 @@
 
 <script type="text/x-handlebars" id="decisions">
     <div class="container decision-list sIn">
-        <button href="#" type="new" class="green">CREATE</button>
+        <button href="/#/decision/new" type="new" class="green">CREATE</button>
         {{#link-to "decision.new"}}decision new{{/link-to}}
+
         <div class="clear"></div>
         <h2 class="small">Ongoing Decisions</h2>
         <ul class="ongoing">
@@ -207,7 +208,7 @@
                     <h4>{{title}}</h4>
                     {{description}}
                 </span>
-                <button type="new" class="green" onClick="$('#sample-radio-{{unbound id}}').click();">CREATE</button>
+                <button type="new" class="green" onClick="$('#sample-radio-{{unbound id}}').click(); scrollTo('#decision-create-fields');">CREATE</button>
                 <input type="radio" value="{{unbound id}}" id="sample-radio-{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
             </li>
             {{/each}}
@@ -215,7 +216,7 @@
         </div>
     </div>
     <br /><br /><br /><br />
-    <div class="greenBg containerBg sIn">
+    <div id="decision-create-fields" class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
             <div class="clear"></div>
