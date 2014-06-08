@@ -20,11 +20,10 @@ function addSampleCriteria(sampleValue) {
     // Remove all fields
     $('.sample-criteria').empty();
 
-    // Add all criteria
-    var title = $('<div></div>').html(chosenSample.title),
-        text,
-        points,
-        newDiv;
+    // Add all questions
+
+    var title = $('<div></div>').html(chosenSample.title);
+    var questions, text, points, newDiv;
 
     $('.sample-criteria').append(title);
 
@@ -41,6 +40,4 @@ function addSampleCriteria(sampleValue) {
         newDiv = $('<div></div>').append(text, points);
         $('.sample-criteria').append(newDiv);
     });
-
-    $('.sample-criteria-list').show();
 }
