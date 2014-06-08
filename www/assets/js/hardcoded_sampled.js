@@ -111,7 +111,7 @@ var ShallISamples = [
     {
         id: 2,
         title: 'Open Source Edition',
-        description: 'Your community is discussing implementing an issue or new feature? Take this template, adjust it to your community's core values, share it with your community members. Shall I even integrates with GitHub so everyone is always up-to-date! And then just wait until everyone filled in the decision and we'll deliver you the final decision. Optimized for your community\'s flow and culture.',
+        description: 'Your community is discussing implementing an issue or new feature? Take this template, adjust it to your community\'s core values, share it with your community members. Shall I even integrates with GitHub so everyone is always up-to-date! And then just wait until everyone filled in the decision and we\'ll deliver you the final decision. Optimized for your community\'s flow and culture.',
         criteria: [
             {
                 title: 'It supports our overall vision',
