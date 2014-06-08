@@ -52,5 +52,5 @@ function addActiveClassToCritera(element) {
 function scrollTo(toElement) {
     $('html, body').animate({
         scrollTop: $(toElement).offset().top
-    }, 1500);
+    }, 1000);
 }

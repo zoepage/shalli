@@ -12,6 +12,12 @@ ShallI.Router.map(function() {
     this.resource('noDecision');
 });
 
+ShallI.ApplicationRoute = Ember.Route.extend({
+    redirect: function() {
+        this.transitionTo('decisions');
+    }
+});
+
 ShallI.DecisionNewRoute = Ember.Route.extend({
     model: function(){
         return this.store.createRecord('decision');

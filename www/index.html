@@ -100,7 +100,7 @@
     </div>
 
     <script type="text/x-handlebars" id="yesDecision">
-    <div class="greenBg containerBg sIn">
+    <div class="greenBg containerBg sIn" id="yes-decision">
         <div class="container">
             <h2 class="slogan white">shalli</h2> 
             <div class="clear"></div>
@@ -113,7 +113,7 @@
     </script>
 
     <script type="text/x-handlebars" id="noDecision">
-    <div class="redBg containerBg sIn">
+    <div class="redBg containerBg sIn" id="no-decision">
         <div class="container">
             <h2 class="slogan white">shalli</h2> 
             <div class="clear"></div>
@@ -126,16 +126,7 @@
     </script>
 
 <script type="text/x-handlebars">
-    <div class="sIn">  
-        <!--
-            Dummy / debugging links
-            Will be removed if the application is working "a little bit"
-        -->
-        <ul>
-            <li>{{#link-to "decision.new"}}decision new{{/link-to}}</li>
-            <li>{{#link-to "decisions"}}decisions{{/link-to}}</li>
-        </ul>
-
+    <div class="sIn">
         {{outlet}}
     </div>
 </script>

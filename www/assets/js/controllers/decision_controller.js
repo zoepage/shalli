@@ -24,14 +24,20 @@ ShallI.DecisionController = Ember.ObjectController.extend({
                 });
             }
 
+            console.log('sum', sum);
             if (sum > 0) {
                 // Yeah!
                 console.log('DO IT! Go for it! Ship it!');
+                this.transitionToRoute('yesDecision');
+                scrollTo('#yes-decision');
+
             } else {
                 // No :(
                 console.log('DONT IT! It will kill five kittens!');
+                this.transitionToRoute('noDecision');
+                scrollTo('#no-decision');
             }
-			
+			/*
 			var opinionsHashMap = {};
 			opinionsHashMap[hoodie.account.username] = opinions;
         	
@@ -40,7 +46,7 @@ ShallI.DecisionController = Ember.ObjectController.extend({
         	//  @TODO save more properties
 
         	this.get('model').save();
-
+            */
 			//this.transitionToRoute('decisions');
         }
         // Add actions here
