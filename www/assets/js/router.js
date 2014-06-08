@@ -8,6 +8,8 @@ ShallI.Router.map(function() {
     this.resource('decisions');
     this.resource('decision', { path: '/decision/:decision_id' });
     this.resource('decision.new', { path: '/decision/new'});
+    this.resource('yesDecision');
+    this.resource('noDecision');
 });
 
 ShallI.DecisionNewRoute = Ember.Route.extend({
@@ -25,6 +27,11 @@ ShallI.DecisionRoute = Ember.Route.extend({
     },
     setupController: function(controller, model) {
         controller.set('model', model);
+    },
+    afterModel: function(decision, transition) {
+        if (decision.isCompleted) {
+            alert("already done");
+        }
     }
 });
 
