@@ -1,5 +1,5 @@
 body {
-  font-family: "effra", Arial, Helvetica, sans-serif;
+  font-family: "effra", Arial, Helvetica, sans-serif !important;
 }
 
 h1, h2, h3 {
@@ -25,6 +25,10 @@ h2.small {
 	font-weight: 300;
 }
 
+.decision-list h2 {
+	margin-top: 85px;
+}
+
 .slogan {
   	font-size: 32px;
   	font-weight: 100;
@@ -43,6 +47,7 @@ p {
   font-weight: normal;
   line-height: 1.3em;
   margin-bottom: 40px;
+  width: 720px;
 }
 
 nav {
@@ -51,3 +56,7 @@ nav {
 /*  color: $grey; */
   font-size: 22px;
 }
+
+	.greenBg ul li {
+		font-weight: 300;
+	}

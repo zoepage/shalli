@@ -48,7 +48,7 @@
             </div> 
 		</div>
     </div>
-
+<!--
     <div class="container">
         <nav>
             <ul>
@@ -58,9 +58,9 @@
             </ul>
         </nav>
     </div>
- 
+ -->
     <div class="container" id="stage">   	
-		<div class="sixteen columns">
+		<div class="">
 			<h1 class="red">shalli</h1>
 			<h2 class="slogan">optimized for sanity</h2>
 			<p class="grey">
@@ -73,7 +73,7 @@
     </div>
 
     <!-- Delete everything in this .container and get started on your own site! -->
-    <div id="login" class="sixteen columns container">
+    <div id="login" class="container">
         <div class="list">
             <form>
                 <div class="hd">
@@ -82,15 +82,60 @@
                     </h2>
                 </div>
                 <div class="bd">
-                    <input id="usr" class="" type="text" name="username" placeholder="username"><br />
-                    <input id="pw" class="" type="password" name="password" placeholder="password"><br />
+                    <input id="usr" class="" type="text" name="username" placeholder="Email address"><br />
+                    <input id="pw" class="" type="password" name="password" placeholder="Password"><br />
                     <!--<input class="" type="password" name="password_confirmation" placeholder="password confirmation">-->
                 </div>
                 <div class="ft">
-                    <button type="submit" class="red">submit</button>
+                    <button type="submit" class="red">SIGN IN</button>
                 </div>
             </form>
         </div>
+    </div>
+
+    <div class="container decision-list">
+        <button href="#" type="new" class="green">CREATE</button>
+        <div class="clear"></div>
+        <h2 class="small">Ongoing Decisions</h2>
+        <ul class="ongoing">
+            <li class=""><span class="icon go"></span><span class="title">Shall we all hate Ember?</span><span class="time-left">2 days left</span></li>
+            <li class=""><span class="icon done"></span><span class="title">Shall we ever do a project in Ember again?</span><span class="time-left">1 day left</span></li>
+        </ul>
+        <h2 class="small">Past Decisions</h2>
+        <ul class="past-decision">
+            <li class="yay"><span class="title">Shall we all hate Ember? I really, really want to kill this wonderfull language!</span><span class="time-left">2 days ago</span></li>
+            <li class="nay"><span class="title">Shall we ever do a project in Ember again?</span><span class="time-left">1 day ago</span></li>
+        </ul>
+    </div>
+
+    <div class="greenBg containerBg">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2>
+            <div class="clear"></div>
+            <h2 class="white small">Create decision</h2>
+            <p class="white">Create a decision by picking one of the templates!</p>
+            <ul class="past-decision">
+                <li class=""><span class="title"><h4>Freelancer</h4>Bacon ipsum dolor sit amet beef ribs pork sausage pancetta pig meatloaf drumstick short loin chicken pork chop bacon. </span><button href="#" type="new" class="green">CREATE</button></li>
+                <li class=""><span class="title"><h4>Open Source</h4>Bacon ipsum dolor sit amet beef ribs pork sausage pancetta pig meatloaf drumstick short loin chicken pork chop bacon. </span><button href="#" type="new" class="green">CREATE</button></li>
+            </ul>
+        </div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="greenBg containerBg">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2> 
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Description</h2>
+        <form id="newDecision">
+            <input type="text" value="" placeholder="What are you deciding?" /><br/>
+            <textarea value="" placeholder="Description"></textarea><br />
+            <input type="text" value="" placeholder="Link to GitHub Issue" />
+        </form>
+        <h2>Sharing</h2>
+        <h2>Time</h2>
     </div>
     <script type="text/x-handlebars">
     <div class="container">  
