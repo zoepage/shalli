@@ -1,26 +1,29 @@
 input[type=text], input[type=password], input[type=email], textarea {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 100;
   color: #9A9A9A;
   padding: 15px 10px;
   border: none;
   text-align: center;
+  font-family: "effra", Arial, Helvetica, sans-serif !important;
 }
+
 input[type=text], input[type=email], textarea {
   border-bottom: 1px solid rgba(101, 101, 101, 0.3);
 }
 
 input[type=submit],
 button {
-  padding: 12px 18px;
+  padding: 10px 20px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
   background: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
   cursor: pointer;
+  letter-spacing: 0.1em;
 }
 
   input[type=submit].green,
@@ -60,14 +63,27 @@ button {
   }
 
   #newDecision textarea {
-    height:; 120px;
+    height: 120px;
   }
-  /*
-  &.white {
+
+  #newDecision button[type=submit] {
+    position: absolute;
+    top: -155px;
+  }
+  
+  input[type=submit].white,
+  button.white {
     border: 4px solid white;
     color: white;
-    &:hover {
+    background-color: transparent; 
+  }
+  input[type=submit]:hover.white,
+  button:hover.white{
       background-color: white;
-      color: $green;
-    }
+      color: #50E38F;
+    
+  }
+
+  .bd {
+    margin-top: 20px;
   }
