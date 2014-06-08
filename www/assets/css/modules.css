@@ -64,7 +64,7 @@ body.signedin .sOut {
 /* dashboard: past list-style */
 .past-decision li {
   color: white;
-  padding:;
+  /*padding:;*/
 }
 
  li.nay {
@@ -109,7 +109,7 @@ li.yay {
 	margin-top: 31px; 
 }
 
-// decision view list-style
+/* decision view list-style */
 li.criteria {
   font-size: 32px;
   font-weight: bold;
@@ -124,8 +124,9 @@ li.criteria span {
 li.criteria.active {
   color: white;
   background: #E35050;
- }
-  li.criteria.active span {
-    color: #820707;
-  }
 }
+
+li.criteria.active span {
+color: #820707;
+}
+

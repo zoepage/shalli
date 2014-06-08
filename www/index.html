@@ -211,7 +211,6 @@
 </script>
 
 <script type="text/x-handlebars" id="decision">
-<<<<<<< HEAD
     <div class="whiteBg containerBg sIn">
         <div class="container">
             <h2 class="slogan red">shalli</h2>
@@ -237,25 +236,11 @@
             {{/each}}
         </ul>
     </div>
-=======
-	Detail view of a decision
-
-	<h1>{{title}}</h1>
-	<p>{{description}}</p>
-	<p>{{url}}</p>
-
-    <table>
-    {{#each sample}}
-        <tr><td>{{title}} {{points}}</td><td>{{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}</td></tr>
-    {{/each}}
-    </table>
->>>>>>> 970f6d43496c7e1d09168a994941738217d688be
 
     <button class="submitDecision" {{action "submitDecision" target="controller"}}>Pseudo Submit</button>
 </script>
 
 <script type="text/x-handlebars" id="decision/new">
-<<<<<<< HEAD
     <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
@@ -264,34 +249,47 @@
             <p class="white">Create a decision by picking one of the templates!</p>
             <ul class="past-decision">
             {{#each hardcodedSamples}}
-            del.description" }}<br />
-            {{input type="text" placeholder="http:// to GitHub Issue" valueBinding="model.url" }}
-=======
-    this is the decision / new route
-
-    <h2>Index Content:</h2>
-
-    <h3> Samples </h3>
-    {{#each hardcodedSamples}}
-        <div style="background-color: green; color: white;">
-            {{unbound id}} - <input type="radio" value="{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
-<br />
-            <b>{{title}}</b><br />
-            {{description}}
+            <li class="">
+                <span class="title">
+                    <h4>{{title}}</h4>
+                    {{description}}
+                </span>
+                <button type="new" class="green" onClick="$('#sample-radio-{{unbound id}}').click();">CREATE</button>
+                <input type="radio" value="{{unbound id}}" id="sample-radio-{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
+            </li>
+            {{/each}}
+            </ul>
         </div>
-    {{/each}}
->>>>>>> 970f6d43496c7e1d09168a994941738217d688be
-
-    {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
-    {{textarea cols="80" rows="6" placeholder="Description" valueBinding="model.description" }}<br />
-    {{input type="text" placeholder="Link" valueBinding="model.url" }} <br />
-
-    <div class="sample-criteria">
-
     </div>
+    <br /><br /><br /><br />
+    <div class="greenBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container sIn">
+        <h2>Description</h2>
+        <form id="newDecision">
+            {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
+            {{textarea placeholder="Description" valueBinding="model.description" }}<br />
+            {{input type="text" placeholder="http:// to GitHub Issue" valueBinding="model.url" }}
 
+            <h2>Sharing</h2>
+            <textarea value="" placeholder="Email adresses"></textarea><br />
+<!--
+            <h2>Time</h2>
+            <input id="1day" class="green" type="radio" name="time" value="1day" /><label for="1day">1 day</label>
+            <input class="green" type="radio" name="time" value="1week" /><label for="1day">1 week</label>
+            <input class="green" type="radio" name="time" value="3week" /><label for="1day">3 weeks</label>
+--->
+            <div class="sample-criteria-list" style="display: none;">
+                <h2>Check all criteria that apply</h2>
+                <div class="sample-criteria"></div>
+            </div>
 
-    <button {{action "createDecision" target="controller"}}>Pseudo Submit</button>
+            <button {{action "createDecision" target="controller"}} class="green">PUBLISH</button>
+        </form>
 </script>
 
     <!--

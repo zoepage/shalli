@@ -97,3 +97,7 @@ button {
 input[type=radio] {
   display: none;  
 }
+
+.sample-criteria input[type=text] {
+    text-align: left;
+}
