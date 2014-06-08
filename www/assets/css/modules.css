@@ -4,8 +4,10 @@
 
 /* --- Hoodie Sign In / Sign Up / Sign out stylings --- */
 /* hide contents until we know if user is signed in or not */
-body.signedout .sIn,
-body.signedin .sOut {
+body.signedout #stage,
+body.signedin #login,
+body.signedout .hoodie-accountbar,
+body .hoodie-account-signedin {
   display: none;
 }
 
@@ -64,7 +66,7 @@ body.signedin .sOut {
 /* dashboard: past list-style */
 .past-decision li {
   color: white;
-  padding:;
+  /*padding:;*/
 }
 
  li.nay {
@@ -82,7 +84,7 @@ li.yay {
 .containerBg h2.slogan {
 	position: relative;
 	float: left;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 .containerBg h2.small {
@@ -109,23 +111,48 @@ li.yay {
 	margin-top: 31px; 
 }
 
-// decision view list-style
 li.criteria {
-  font-size: 32px;
+  /*font-size: 32px;*/
   font-weight: bold;
   color: #2c2c2c;
 }
 
 li.criteria span {
   font-weight: 100;
+  font-size: 21px;
   color: red;
 }
 
 li.criteria.active {
+  margin-top: 0 !important;
   color: white;
   background: #E35050;
  }
   li.criteria.active span {
     color: #820707;
   }
+  li.criteria.active h4 {
+    color: white;
+  }
 }
+
+li.criteria.active span {
+color: #820707;
+}
+
+.decision-past {
+  color: white;
+  margin-bottom: 80px;
+}
+
+.decision-past span {
+  font-weight: 500 !important;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.decision-past p {
+  font-weight: bold;
+  font-size: 100px;
+}
+
