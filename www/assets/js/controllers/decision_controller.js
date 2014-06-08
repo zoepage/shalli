@@ -3,12 +3,34 @@ ShallI.DecisionController = Ember.ObjectController.extend({
         submitDecision: function() {        	
         	var criteriaOpinions = $('.criteria-checkbox'),
         		opinions = Array();
-        	
-        	for (var index = 0; index < criteriaOpinions.length; index++) {
-        		opinions.push({
-        			opinion: $(criteriaOpinions[index]).attr('checked')
-        		});
-        	}
+
+            var sample = this.get('sample'),
+                sum = 0;
+
+            /**
+             * ATTENTION!
+             * HIGHLY HACKATHON CODE
+             * JUST MAKE THIS WORK. NO PRODUCTION CODE!
+             */
+
+            for (var index = 0; index < criteriaOpinions.length; index++) {
+
+                if ($(criteriaOpinions[index]).prop('checked')) {
+                    sum += parseInt(sample[index].points);
+                }
+
+                opinions.push({
+                    opinion: $(criteriaOpinions[index]).prop('checked')
+                });
+            }
+
+            if (sum > 0) {
+                // Yeah!
+                console.log('DO IT! Go for it! Ship it!');
+            } else {
+                // No :(
+                console.log('DONT IT! It will kill five kittens!');
+            }
 			
 			var opinionsHashMap = {};
 			opinionsHashMap[hoodie.account.username] = opinions;
@@ -19,7 +41,7 @@ ShallI.DecisionController = Ember.ObjectController.extend({
 
         	this.get('model').save();
 
-			this.transitionToRoute('decisions');
+			//this.transitionToRoute('decisions');
         }
         // Add actions here
     },
