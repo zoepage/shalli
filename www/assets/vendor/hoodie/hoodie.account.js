@@ -16,10 +16,6 @@ $(function() {
       var usrV  = $('#usr').val();
       var pwV   = $('#pw').val();
       var pwVrep   = $('#pw2').val();
-
-
-
-      console.log('usr: ' + usrV + ' pw: ' + pwV + ' pw2: ' + pwVrep);
      
       if (pwVrep.length > 0) {
          fcn = hoodie.account.signUp(usrV, pwV, pwVrep);
