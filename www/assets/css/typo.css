@@ -50,6 +50,10 @@ p {
   width: 720px;
 }
 
+p.small {
+  font-size: 16px;
+}
+
 nav {
   font-weight: bold;
   text-transform: uppercase;
