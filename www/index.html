@@ -93,46 +93,6 @@
         </div>
     </div>
 
-<br /><br /><br /><br />
-    <div class="whiteBg containerBg sIn">
-        <div class="container">
-            <h2 class="slogan red">shalli</h2>
-            <div class="clear"></div>
-            <h2 class="dark-grey small">
-                Company xyz would love to hire me to design a corporate identity
-            </h2>
-            <p class="grey">
-                Jowl shoulder jerky, strip steak venison bacon rump porchetta biltong turkey shankle pork. Pork meatball andouille frankfurter brisket. Cow shankle kielbasa, rump pork belly drumstick t-bone .
-            </p>
-        </div>
-        <ul class="past-decision">
-                <li class="criteria">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay?
-                    </span>
-                    <input type="checkbox" name="" value="x" id="yaybox">
-                    <label for="yaybox"><span></span></label>
-                </li>
-                <li class="criteria">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay? 
-                    </span>
-                    <input type="checkbox" name="" value="x" id="yaybox">
-                    <label for="yaybox"><span></span></label>
-                </li>
-                <li class="criteria active">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay? 
-                    </span>
-                    <input type="checkbox" name="" value="x" id="yaybox">
-                    <label for="yaybox"><span></span></label>
-                </li>
-            </ul>
-    </div>
-
     <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2> 
@@ -155,21 +115,19 @@
         </div>
     </div>
 
-    <script type="text/x-handlebars">
+<script type="text/x-handlebars">
     <div class="container sIn">  
-			<!--
-                Dummy / debugging links
-                Will be removed if the application is working "a little bit"
-            -->
-            <ul>
-                <li>{{#link-to "decision.new"}}decision new{{/link-to}}</li>
-                <li>{{#link-to "decisions"}}decisions{{/link-to}}</li>
-            </ul>
+        <!--
+            Dummy / debugging links
+            Will be removed if the application is working "a little bit"
+        -->
+        <ul>
+            <li>{{#link-to "decision.new"}}decision new{{/link-to}}</li>
+            <li>{{#link-to "decisions"}}decisions{{/link-to}}</li>
+        </ul>
 
-			<!-- sixteen columns -->
-
-			{{outlet}}
-	</div><!-- container -->
+        {{outlet}}
+    </div>
 </script>
 
 <script type="text/x-handlebars" id="decisions">
@@ -194,6 +152,7 @@
 </script>
 
 <script type="text/x-handlebars" id="decision">
+
     <div class="whiteBg containerBg sIn">
         <div class="container">
             <h2 class="slogan red">shalli</h2>
@@ -204,17 +163,21 @@
             <p class="grey">
                 {{description}}
             </p>
-            <!-- @TODO was machen wir mit der url? {{url}} -->
+            <p class="grey">
+                {{url}}
+            </p>
         </div>
         <ul class="past-decision">
             {{#each sample}}
             <li class="criteria"> <!-- @TODO li kann noch die klasse active haben -->
                 <span class="title">
                     <h4>{{title}}</h4>
-                    Yay or nay? ...
+                    Yay or nay?
                 </span>
-                <button href="#" type="new" class="red">✓</button>
-                {{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}
+
+                <!-- TODO ids mal unique machen + wenn selected die klasse active -->
+                {{input type="checkbox" class="criteria-checkbox" id="yaybox" valueBinding="model.opinion"}}
+                <label for="yaybox"><span></span></label>
             </li>
             {{/each}}
         </ul>
