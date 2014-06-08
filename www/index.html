@@ -106,43 +106,6 @@
         </ul>
     </div>
 
-<br /><br /><br /><br />
-    <div class="whiteBg containerBg">
-        <div class="container">
-            <h2 class="slogan red">shalli</h2>
-            <div class="clear"></div>
-            <h2 class="dark-grey small">
-                Company xyz would love to hire me to design a corporate identity
-            </h2>
-            <p class="grey">
-                Jowl shoulder jerky, strip steak venison bacon rump porchetta biltong turkey shankle pork. Pork meatball andouille frankfurter brisket. Cow shankle kielbasa, rump pork belly drumstick t-bone .
-            </p>
-        </div>
-        <ul class="past-decision">
-                <li class="criteria">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay?
-                    </span>
-                    <button href="#" type="new" class="red">✓</button>
-                </li>
-                <li class="criteria">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay? 
-                    </span>
-                    <button href="#" type="new" class="red">✓</button>
-                </li>
-                <li class="criteria active">
-                    <span class="title">
-                        <h4>Freelancer</h4>
-                        Yay or nay? 
-                    </span>
-                    <button href="#" type="new" class="red">✓</button>
-                </li>
-            </ul>
-    </div>
-    
     <script type="text/x-handlebars">
     <div class="container">  
 			<!--
@@ -170,17 +133,31 @@
 </script>
 
 <script type="text/x-handlebars" id="decision">
-	Detail view of a decision
-
-	<h1>{{title}}</h1>
-	<p>{{description}}</p>
-	<p>{{url}}</p>
-
-    <table>
-    {{#each sample}}
-        <tr><td>{{title}} {{points}}</td><td>{{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}</td></tr>
-    {{/each}}
-    </table>
+    <div class="whiteBg containerBg">
+        <div class="container">
+            <h2 class="slogan red">shalli</h2>
+            <div class="clear"></div>
+            <h2 class="dark-grey small">
+                {{title}}
+            </h2>
+            <p class="grey">
+                {{description}}
+            </p>
+            <!-- @TODO was machen wir mit der url? {{url}} -->
+        </div>
+        <ul class="past-decision">
+            {{#each sample}}
+            <li class="criteria"> <!-- @TODO li kann noch die klasse active haben -->
+                <span class="title">
+                    <h4>{{title}}</h4>
+                    Yay or nay? ...
+                </span>
+                <button href="#" type="new" class="red">✓</button>
+                {{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
 
     <button class="submitDecision" {{action "submitDecision" target="controller"}}>Pseudo Submit</button>
 </script>
