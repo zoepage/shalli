@@ -10,3 +10,123 @@ body.signedout .hoodie-accountbar {
   display: none;
 }
 
+/* dashboard: ongoing list-style */
+.decision-list {
+	margin-top: 85px;
+}
+	.decision-list .green {
+		position: relative;
+		float: right;
+	}
+
+.ongoing,
+.past-decision {
+	margin: 20px auto;
+	width:650px;
+}
+
+.ongoing li,
+.past-decision li {
+  font-weight: bold;
+  color: #2c2c2c;
+  font-size: 22px;
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+  text-align: left;
+  width:650px;
+}
+	.ongoing span, .past-decision span { display: inline-block; }
+
+	.ongoing span.time-left,
+	.past-decision .time-left {
+	  font-size: 18px;
+	  font-weight: normal;
+	}
+
+	.ongoing span.time-left {
+	  color: #9A9A9A;
+	}
+
+	.ongoing span.title {
+		width: 470px;
+	}
+
+	.past-decision span.title {
+		padding: 0 35px;
+		width: 470px;
+	}
+
+	.ongoing span.icon {
+		width: 85px;
+		height: 20px;
+		text-align: center;
+	}
+
+/* dashboard: past list-style */
+.past-decision li {
+  color: white;
+  padding:;
+}
+
+ li.nay {
+  background-color: #E35050;
+}
+
+li.yay {
+  background-color: #50E38F;
+}
+
+.containerBg {
+	padding: 10px;
+}
+
+.containerBg h2.slogan {
+	position: relative;
+	float: left;
+	font-weight: 500;
+}
+
+.containerBg h2.small {
+	font-weight: 500;
+	margin-top: 95px;
+}
+
+.containerBg ul li .title {
+	width: 440px;
+}
+
+.containerBg ul li:first-child {
+	margin-top: 60px;
+}
+
+.containerBg ul li:last-child {
+	margin-top: 10px;
+	margin-bottom: 105px;
+}
+
+.containerBg ul li button {
+	position: relative;
+	float: right;
+	margin-right: 12px;
+	margin-top: 24px; 
+}
+/*
+// decision view list-style
+li.criteria {
+  font-size: 32px;
+  font-weight: bold;
+  color: $dark-grey;
+}
+
+li.criteria span {
+  font-weight: 100;
+  color: red;
+}
+
+li.criteria.active {
+  color: white;
+  background: $red;
+  span {
+    color: $dark-red;
+  }
+}

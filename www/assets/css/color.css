@@ -12,3 +12,19 @@
 }
 .grey{ 
 	color: #9A9A9A;
+}
+.white {
+	color: white;
+}
+
+.icon.go { background: url(../img/go.png) no-repeat center bottom; }
+.icon.done { background: url(../img/done.png) no-repeat center bottom; }
+
+.greenBg {
+	background-color: #50E38F;
+}
+
+	.greenBg ul li {
+		background-color: white;
+		color: #9A9A9A;
+	}
