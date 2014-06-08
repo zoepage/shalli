@@ -3,4 +3,4 @@
 #### Optimized for Sanity
 
 
-[http://shalli.antilab.de](Shall I App)
+[http://shalli.antilab.de]
