@@ -49,6 +49,19 @@ button {
   input:focus {
     outline: none;
   }
+
+  #newDecision {
+    text-align: center;
+  }
+
+  #newDecision input,
+  #newDecision textarea {
+    width: 550px;
+  }
+
+  #newDecision textarea {
+    height:; 120px;
+  }
   /*
   &.white {
     border: 4px solid white;
