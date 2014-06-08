@@ -130,3 +130,7 @@ input[type="checkbox"]:checked + label span {
 input[type=radio] {
   display: none;  
 }
+
+.sample-criteria input[type=text] {
+    text-align: left;
+}

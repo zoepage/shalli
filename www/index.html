@@ -34,19 +34,17 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/vendor/skeleton/images/apple-touch-icon-114x114.png">
 
 </head>
-<body class="" id="wraper">
+<body class="signedin" id="wraper">
 
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div class="container" >
-		<div class="sixteen columns">
-			<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
-                <div class="hoodie-account-signedin">
-                    Hello <span class="hoodie-username"></span>, <a href="#" class="logout">Sign Out</a>
-                </div> 
+	<div class="container sIn">
+		<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
+            <div class="hoodie-account-signedin">
+                Hello <span class="hoodie-username"></span>, <a href="#" class="logout grey">Sign Out</a>
             </div> 
-		</div>
+        </div> 
     </div>
 <!--
     <div class="container">
@@ -59,19 +57,23 @@
         </nav>
     </div>
  -->
-    <div class="container" id="stage">   	
+    <div class="container sOut" id="stage">   	
 		<div class="">
 			<h1 class="red">shalli</h1>
 			<h2 class="slogan">optimize for sanity</h2>
 			<p class="grey">
-                We make decisions all the time, many unconciously. Still, making good decisions is hard, and it's even harder in working contexts and Open Source Projects. Even when attempting to act professionally, think everything through and consider all implications, we are still humans: with our own individual needs, emotions and short attention spans. Sit down once, define your core values and what matters to you personally or as a community, and any time you're not sure if you want to accept a new inquiry from a client or implement a new feature in your Open Source project: just ask <b>Shall I?</b>. Shalli is the app that is there for you.
+                We make decisions all the time, many unconciously.
+                Still, making good decisions is hard, and it's even harder in working contexts and Open Source Projects.
+                Even when attempting to act professionally, think everything through and consider all implications, we are still humans: with our own individual needs, emotions and short attention spans.
+                Sit down once, define your core values and what matters to you personally or as a community, and any time you're not sure if you want to accept a new inquiry from a client or implement a new feature in your Open Source project: just ask <b>Shall I?</b>.
+                Shalli is the app that is there for you.
             </p>
             
 		</div>
     </div>
 
     <!-- Delete everything in this .container and get started on your own site! -->
-    <div id="login" class="container">
+    <div id="login" class="container sOut">
         <div class="list">
             <form>
                 <div class="hd">
@@ -91,7 +93,7 @@
         </div>
     </div>
 
-    <div class="container decision-list">
+    <div class="container decision-list sIn">
         <button href="#" type="new" class="green">CREATE</button>
         <div class="clear"></div>
         <h2 class="small">Ongoing Decisions</h2>
@@ -106,7 +108,8 @@
         </ul>
     </div>
 
-    <div class="greenBg containerBg">
+
+    <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2>
             <div class="clear"></div>
@@ -119,7 +122,7 @@
         </div>
     </div>
     <br /><br /><br /><br />
-    <div class="greenBg containerBg">
+    <div class="greenBg containerBg sIn">
         <div class="container">
             <h2 class="slogan white">shalli</h2> 
             <div class="clear"></div>
@@ -144,7 +147,7 @@
         </form>
     </div>
 <br /><br /><br /><br />
-    <div class="whiteBg containerBg">
+    <div class="whiteBg containerBg sIn">
         <div class="container">
             <h2 class="slogan red">shalli</h2>
             <div class="clear"></div>
@@ -182,9 +185,10 @@
                 </li>
             </ul>
     </div>
-    
+
+
     <script type="text/x-handlebars">
-    <div class="container">  
+    <div class="container sIn">  
 			<!--
                 Dummy / debugging links
                 Will be removed if the application is working "a little bit"
@@ -210,46 +214,85 @@
 </script>
 
 <script type="text/x-handlebars" id="decision">
-	Detail view of a decision
-
-	<h1>{{title}}</h1>
-	<p>{{description}}</p>
-	<p>{{url}}</p>
-
-    <table>
-    {{#each sample}}
-        <tr><td>{{title}} {{points}}</td><td>{{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}</td></tr>
-    {{/each}}
-    </table>
+    <div class="whiteBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan red">shalli</h2>
+            <div class="clear"></div>
+            <h2 class="dark-grey small">
+                {{title}}
+            </h2>
+            <p class="grey">
+                {{description}}
+            </p>
+            <!-- @TODO was machen wir mit der url? {{url}} -->
+        </div>
+        <ul class="past-decision">
+            {{#each sample}}
+            <li class="criteria"> <!-- @TODO li kann noch die klasse active haben -->
+                <span class="title">
+                    <h4>{{title}}</h4>
+                    Yay or nay? ...
+                </span>
+                <button href="#" type="new" class="red">✓</button>
+                {{input type="checkbox" class="criteria-checkbox" valueBinding="model.opinion"}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
 
     <button class="submitDecision" {{action "submitDecision" target="controller"}}>Pseudo Submit</button>
 </script>
 
 <script type="text/x-handlebars" id="decision/new">
-    this is the decision / new route
-
-    <h2>Index Content:</h2>
-
-    <h3> Samples </h3>
-    {{#each hardcodedSamples}}
-        <div style="background-color: green; color: white;">
-            {{unbound id}} - <input type="radio" value="{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
-<br />
-            <b>{{title}}</b><br />
-            {{description}}
+    <div class="greenBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2>
+            <div class="clear"></div>
+            <h2 class="white small">Create decision</h2>
+            <p class="white">Create a decision by picking one of the templates!</p>
+            <ul class="past-decision">
+            {{#each hardcodedSamples}}
+            <li class="">
+                <span class="title">
+                    <h4>{{title}}</h4>
+                    {{description}}
+                </span>
+                <button type="new" class="green" onClick="$('#sample-radio-{{unbound id}}').click();">CREATE</button>
+                <input type="radio" value="{{unbound id}}" id="sample-radio-{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
+            </li>
+            {{/each}}
+            </ul>
         </div>
-    {{/each}}
-
-    {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
-    {{textarea cols="80" rows="6" placeholder="Description" valueBinding="model.description" }}<br />
-    {{input type="text" placeholder="Link" valueBinding="model.url" }} <br />
-
-    <div class="sample-criteria">
-
     </div>
+    <br /><br /><br /><br />
+    <div class="greenBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container sIn">
+        <h2>Description</h2>
+        <form id="newDecision">
+            {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
+            {{textarea placeholder="Description" valueBinding="model.description" }}<br />
+            {{input type="text" placeholder="http:// to GitHub Issue" valueBinding="model.url" }}
 
+            <h2>Sharing</h2>
+            <textarea value="" placeholder="Email adresses"></textarea><br />
+<!--
+            <h2>Time</h2>
+            <input id="1day" class="green" type="radio" name="time" value="1day" /><label for="1day">1 day</label>
+            <input class="green" type="radio" name="time" value="1week" /><label for="1day">1 week</label>
+            <input class="green" type="radio" name="time" value="3week" /><label for="1day">3 weeks</label>
+--->
+            <div class="sample-criteria-list" style="display: none;">
+                <h2>Check all criteria that apply</h2>
+                <div class="sample-criteria"></div>
+            </div>
 
-    <button {{action "createDecision" target="controller"}}>Pseudo Submit</button>
+            <button {{action "createDecision" target="controller"}} class="green">PUBLISH</button>
+        </form>
 </script>
 
     <!--

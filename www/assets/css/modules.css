@@ -66,7 +66,7 @@ body .hoodie-account-signedin {
 /* dashboard: past list-style */
 .past-decision li {
   color: white;
-  padding:;
+  /*padding:;*/
 }
 
  li.nay {
@@ -134,3 +134,8 @@ li.criteria.active {
   li.criteria.active h4 {
     color: white;
   }
+}
+
+li.criteria.active span {
+color: #820707;
+}

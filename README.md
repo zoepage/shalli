@@ -1,4 +1,4 @@
-# Shall I? 
+# Shall I?
 
 #### Optimized for Sanity
 

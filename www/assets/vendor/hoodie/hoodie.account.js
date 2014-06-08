@@ -30,15 +30,14 @@ $(function() {
       $('body').removeClass('signedin').addClass('signedout');
     });
     
-/*
-    hoodie.account.on('signin', function (user) {
-      
-    });
+    var session = hoodie.account.hasValidSession();
 
-    hoodie.account.on('signout', function (user) {
-       
-    });
-*/
+    if(!session) {
+        $('body').removeClass('signedin').addClass('signedout');
+    } else {
+      $('body').removeClass('signedout').addClass('signedin');
+      $('.hoodie-accountbar').find('.hoodie-username').text(hoodie.account.username); 
+    };
 
     hoodie.account.on('unauthenticated', function (user) { 
       alert('unautth') 
