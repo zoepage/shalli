@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Shall I?</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Vendor CSS
+	================================================== -->
+	<link rel="stylesheet" href="assets/vendor/skeleton/base.css">
+	<link rel="stylesheet" href="assets/vendor/skeleton/skeleton.css">
+	<link rel="stylesheet" href="assets/vendor/skeleton/layout.css">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- Favicons
+	================================================= -->
+	<link rel="shortcut icon" href="assets/vendor/skeleton/images/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/vendor/skeleton/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/vendor/skeleton/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/vendor/skeleton/images/apple-touch-icon-114x114.png">
+
+</head>
+<body class="signedin" id="wraper">
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container sIn">
+		<div class="hoodie-accountbar" data-hoodie-account-status="signedout">
+            <div class="hoodie-account-signedin">
+                Hello <span class="hoodie-username"></span>, <a href="#" class="logout grey">Sign Out</a>
+            </div> 
+        </div> 
+    </div>
+<!--
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+ -->
+    <div class="container sOut" id="stage">   	
+		<div class="">
+			<h1 class="red">shalli</h1>
+			<h2 class="slogan">optimize for sanity</h2>                
+
+			<p class="grey">
+                Making good decisions is hard, and it's even harder in working contexts and Open Source Projects.
+                Even when attempting to act professionally, think all implications through, we are still humans: with our own individual needs, emotions and short attention spans.
+               
+                Shalli is the app that is there for you.
+
+            </p>
+
+            <p class="dark-grey">
+                <em>Sit down once, define your core values and what matters to you personally or as a community, and any time you're not sure if you want to accept a new inquiry from a client or implement a new feature in your Open Source project: just ask <b>Shall I?</em>
+            </p>
+            
+		</div>
+    </div>
+
+    <!-- Delete everything in this .container and get started on your own site! -->
+    <div id="login" class="container sOut">
+        <div class="list">
+            <form>
+                <div class="hd">
+                    <h2 class="darkgrey">
+                        Signing up just takes seconds
+                    </h2>
+                </div>
+                <div class="bd">
+                    <input id="usr" class="" type="text" name="username" placeholder="Email address"><br />
+                    <input id="pw" class="" type="password" name="password" placeholder="Password"><br />
+                    <input id="pw2" class="" type="password" name="password2" placeholder="New? Repeat password"><br />
+                    <!--<input class="" type="password" name="password_confirmation" placeholder="password confirmation">-->
+                </div>
+                <div class="ft" style="margin-bottom: 115px;">
+                    <button type="submit" class="red">SIGN IN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/x-handlebars" id="yesDecision">
+    <div class="greenBg containerBg sIn" id="yes-decision">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2> 
+            <div class="clear"></div>
+        </div>
+        <div class="container decision-past yay">
+            <span>Company xy would like to hire me to design a corporate identity for them.</span>
+            <p>Yes, you shall.</p>
+        </div>
+    </div>
+    </script>
+
+    <script type="text/x-handlebars" id="noDecision">
+    <div class="redBg containerBg sIn" id="no-decision">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2> 
+            <div class="clear"></div>
+        </div>
+        <div class="container decision-past nay">
+            <span>Company xy would like to hire me to design a corporate identity for them.</span>
+            <p>No, you shan’t.</p>
+        </div>
+    </div>
+    </script>
+
+<script type="text/x-handlebars">
+    <div class="sIn">
+        {{outlet}}
+    </div>
+</script>
+
+<script type="text/x-handlebars" id="decisions">
+    <div class="container decision-list sIn">
+        <span class="create-button-link green">{{#link-to "decision.new"}}CREATE{{/link-to}}</span>
+
+        <div class="clear"></div>
+        <h2 class="small">Ongoing Decisions</h2>
+        <ul class="ongoing">
+            <li></li>
+            {{#each}}
+	        <li class=""><span class="icon go"></span><span class="title">{{#link-to "decision" id}}{{title}}{{/link-to}}</span><span class="time-left">2 days left</span></li>
+	        {{/each}}
+            <li class=""><span class="icon go"></span><span class="title">Community, shall we implement issue 38?</span><span class="time-left">2 days left</span></li>
+            <li class=""><span class="icon done"></span><span class="title">Shall I accept the offer from the client I hate really much?</span><span class="time-left">1 day left</span></li>
+        </ul>
+        <h2 class="small">Past Decisions</h2>
+        <ul class="past-decision">
+            <li class="yay"><span class="title">Dear Shalli, should I attend #HackathonHH?</span><span class="time-left">2 days ago</span></li>
+            <li class="nay"><span class="title">Community Decision: shall we implement PouchDB?</span><span class="time-left">1 day ago</span></li>
+
+        </ul>
+    </div>
+</script>
+
+<script type="text/x-handlebars" id="decision">
+
+    <div class="whiteBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan red">shalli</h2>
+            <div class="clear"></div>
+            <h2 class="dark-grey small">
+                {{title}}
+            </h2>
+            <p class="grey">
+                {{description}}
+            </p>
+            <p class="grey">
+                {{url}}
+            </p>
+        </div>
+        <ul class="past-decision">
+            {{#each sample}}
+            <li class="criteria"> <!-- @TODO li kann noch die klasse active haben -->
+                <span class="title">
+                    <h4>{{title}}</h4>
+                    Yay or nay?
+                </span>
+
+                <!-- TODO ids mal unique machen + wenn selected die klasse active -->
+                <input type="checkbox" class="criteria-checkbox" onChange="addActiveClassToCritera(this);" id="yaybox-{{unbound _view.contentIndex}}" />
+                <label for="yaybox-{{unbound _view.contentIndex}}"><span></span></label>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div style="text-align: center">
+        <button class="submitDecision green" {{action "submitDecision" target="controller"}}>Decide</button>
+        <br />
+        <br />
+    </div>
+</script>
+
+<script type="text/x-handlebars" id="decision/new">
+
+    <div class="greenBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2>
+            <div class="clear"></div>
+            <h2 class="white small">Start a new decision</h2>
+            <p class="white">Create a decision by picking one of the Shall I-templates!</p>
+            <ul class="past-decision">
+            {{#each hardcodedSamples}}
+            <li class="">
+                <span class="title">
+                    <h4>{{title}}</h4>
+                    {{description}}
+                </span>
+                <button type="new" class="green" onClick="$('#sample-radio-{{unbound id}}').click(); scrollTo('#decision-create-fields');">CREATE</button>
+                <input type="radio" value="{{unbound id}}" id="sample-radio-{{unbound id}}" name="sample" onChange="addSampleCriteria(this.value);" />
+            </li>
+            {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div id="decision-create-fields" class="greenBg containerBg sIn">
+        <div class="container">
+            <h2 class="slogan white">shalli</h2>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container sIn">
+        <h2>Description</h2>
+        <form id="newDecision">
+            {{input type="text" placeholder="What are you deciding?" valueBinding="model.title" }}<br />
+            {{textarea placeholder="Description" valueBinding="model.description" }}<br />
+            {{input type="text" placeholder="http:// to GitHub Issue" valueBinding="model.url" }}
+
+            <h2>Sharing</h2>
+            <textarea value="" placeholder="Email adresses"></textarea><br />
+<!--
+            <h2>Time</h2>
+            <input id="1day" class="green" type="radio" name="time" value="1day" /><label for="1day">1 day</label>
+            <input class="green" type="radio" name="time" value="1week" /><label for="1day">1 week</label>
+            <input class="green" type="radio" name="time" value="3week" /><label for="1day">3 weeks</label>
+--->
+            <div class="sample-criteria-list" style="display: none;">
+                <h2>Check all criteria that apply</h2>
+                <div class="sample-criteria"></div>
+            </div>
+
+            <button {{action "createDecision" target="controller"}} class="green">PUBLISH</button>
+        </form>
+</script>
+
+    <!--
+        The complete shitload of javascript!
+        So cute, isn`t it? <3
+
+        @TODO If we put this into production, maybe the minified versions are better.
+              Currently we are using debugging versions.
+    -->
+    <!--
+        Hood.ie
+        + jQuery deps
+        Load the dynamic version of hoodie.js that includes all the plugin code
+    -->
+    <script src="assets/vendor/jquery/jquery-2.1.1.js"></script>
+    <script src="/_api/_files/hoodie.js"></script>
+    <script src="assets/vendor/hoodie/hoodie.account.js"></script>
+
+    <!--
+        Ember.js
+        + handlebar deps
+        + self coded ShallI app :)
+    -->
+    <script src="assets/vendor/handlebars/handlebars.js"></script>
+    <script src="assets/vendor/ember/ember.js"></script>
+    <script src="assets/vendor/ember/ember-data.js"></script>
+
+    <!-- Ember base stuff -->
+    <script src="assets/vendor/ember-hoodie/ember-hoodie-adapter.js"></script>
+    <script src="assets/js_ember/hardcoded_sampled.js"></script>
+    <script src="assets/js_ember/functions/dirty.js"></script>
+    <script src="assets/js_ember/shalli.js"></script>
+    <script src="assets/js_ember/router.js"></script>
+    <!--<script src="assets/js/hoodie_events.js"></script>-->
+
+    <!-- Ember models -->
+    <script src="assets/js_ember/models/decision.js"></script>
+    <script src="assets/js_ember/models/group.js"></script>
+    <script src="assets/js_ember/models/sample.js"></script>
+
+    <!-- Ember controller -->
+    <script src="assets/js_ember/controllers/application_controller.js"></script>
+    <script src="assets/js_ember/controllers/decision_controller.js"></script>
+    <script src="assets/js_ember/controllers/decision_new_controller.js"></script>
+    <script src="assets/js_ember/controllers/decisions_controller.js"></script>
+
+    <script type="text/javascript" src="//use.typekit.net/hjq4dad.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
