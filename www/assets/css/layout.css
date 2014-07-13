@@ -4,7 +4,7 @@
 
 
 .container {
-	margin-top: 40px;
+	margin-top: 2.5rem;
 	text-align: center;
 	max-width: 720px;
 	width: 100%;
@@ -12,12 +12,12 @@
 
 .hoodie-accountbar {
 	position: absolute;
-	top: -30px;
+	top: -1.875rem;
 	right: 0;
 }
 
 .content {
-	padding-bottom: 25px;
+	padding-bottom: 1.5625rem;
 	}
 
 .copy {
@@ -25,7 +25,7 @@
 }
 
 .copy p {
-	padding: 10px 0;
+	padding: .625rem 0;
 	text-align: center;
 }
 
@@ -34,15 +34,15 @@
 }
 
 #newDecision h2 {
-	margin-top: 60px;
+	margin-top: 3.75rem;
 }
 
 .whiteBg .grey {
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 .whiteBg .container h2.dark-grey,
 .whiteBg .container p {
 	width: 470px;
-	margin: 0 auto 30px;
+	margin: 0 auto 1.875rem;
 }
