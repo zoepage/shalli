@@ -6,7 +6,8 @@
 .container {
   margin-top: 40px;
   text-align: center;
-  width: 720px;
+  max-width: 720px;
+  width: 100%;
 }
 
 	.hoodie-accountbar {
