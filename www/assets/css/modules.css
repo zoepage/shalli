@@ -13,80 +13,86 @@ body.signedin .sOut{
 .decision-list {
 	margin-top: 85px;
 }
-	.decision-list .green {
-		position: relative;
-		float: right;
-	}
 
-	.decision-list .create-button-link {
-		margin-top: 15px;
-	}
+.decision-list .green {
+	position: relative;
+	float: right;
+}
+
+.decision-list .create-button-link {
+	margin-top: 15px;
+}
 
 .ongoing,
 .past-decision {
 	margin: 20px auto;
-	width:650px;
 }
 
 .ongoing .title a {
-	text-decoration: none;
 	color:#2c2c2c;
+	text-decoration: none;
 }
 
 .ongoing li,
 .past-decision li {
-  font-weight: bold;
-  color: #2c2c2c;
-  font-size: 22px;
-  padding: 35px 0;
-  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
-  text-align: left;
-  width:650px;
+	display: flex;
+	padding: 35px 0;
+	border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+	color: #2c2c2c;
+	text-align: left;
+	font-weight: bold;
+	font-size: 22px;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
 }
-	.ongoing span, .past-decision span { display: inline-block; }
 
-	.ongoing span.time-left,
-	.past-decision .time-left {
-	  font-size: 18px;
-	  font-weight: normal;
-	}
+.ongoing span, .past-decision span { display: inline-block; }
 
-	.ongoing span.time-left {
-	  color: #9A9A9A;
-	}
+.ongoing span.time-left,
+.past-decision .time-left {
+	font-weight: normal;
+	font-size: 18px;
+}
 
-	.ongoing span.title {
-		width: 470px;
-	}
+.ongoing span.time-left {
+	margin-left: 15px;
+	color: #9A9A9A;
+}
 
-  .ongoing .span.title a {
-    color: #2c2c2c;
-    text-decoration: none;
-  }
+.ongoing span.title {
+	margin-right: auto;
+}
 
-	.past-decision span.title {
-		padding: 0 35px;
-		width: 470px;
-	}
+.ongoing .span.title a {
+	color: #2c2c2c;
+	text-decoration: none;
+}
 
-	.ongoing span.icon {
-		width: 85px;
-		height: 20px;
-		text-align: center;
-	}
+.past-decision span.title {
+	padding: 0 35px;
+	width: 470px;
+}
+
+.ongoing span.icon {
+	margin-right: 15px;
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	flex-shrink: 0;
+}
 
 /* dashboard: past list-style */
 .past-decision li {
-  color: white;
-  /*padding:;*/
+	color: white;
 }
 
- li.nay {
-  background-color: #E35050;
+li.nay {
+	background-color: #E35050;
 }
 
 li.yay {
-  background-color: #50E38F;
+	background-color: #50E38F;
 }
 
 .containerBg {
@@ -100,8 +106,8 @@ li.yay {
 }
 
 .containerBg h2.small {
-	font-weight: 500;
 	margin-top: 95px;
+	font-weight: 500;
 }
 
 .containerBg ul li .title {
@@ -118,34 +124,34 @@ li.yay {
 }
 
 .containerBg ul li button {
-	position: absolute;	
-	margin-left: -17px;
-	margin-top: 31px; 
+	position: absolute;
+	margin-top: 31px;	
+	margin-left: -17px; 
 }
 
 li.criteria {
-  /*font-size: 32px;*/
-  font-weight: bold;
-  color: #2c2c2c;
+	color: #2c2c2c;
+	font-weight: bold;
 }
 
 li.criteria span {
-  font-weight: 100;
-  font-size: 21px;
-  color: red;
+	color: red;
+	font-weight: 100;
+	font-size: 21px;
 }
 
 li.criteria.active {
-  margin-top: 0 !important;
-  color: white;
-  background: #E35050;
- }
-  li.criteria.active span {
-    color: #820707;
-  }
-  li.criteria.active h4 {
-    color: white;
-  }
+	margin-top: 0 !important;
+	background: #E35050;
+	color: white;
+}
+
+li.criteria.active span {
+	color: #820707;
+}
+
+li.criteria.active h4 {
+	color: white;
 }
 
 li.criteria.active span {
@@ -153,18 +159,18 @@ color: #820707;
 }
 
 .decision-past {
-  color: white;
-  margin-bottom: 80px;
+	margin-bottom: 80px;
+	color: white;
 }
 
 .decision-past span {
-  font-weight: 500 !important;
-  font-size: 40px;
-  line-height: 1.2em;
+	font-weight: 500 !important;
+	font-size: 40px;
+	line-height: 1.2em;
 }
 
 .decision-past p {
-  font-weight: bold;
-  font-size: 100px;
+	font-weight: bold;
+	font-size: 100px;
 }
 
