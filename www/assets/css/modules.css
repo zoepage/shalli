@@ -6,7 +6,7 @@
 /* hide contents until we know if user is signed in or not */
 body.signedout .sIn,
 body.signedin .sOut{
-  display: none;
+	display: none;
 }
 
 /* dashboard: ongoing list-style */
@@ -42,7 +42,7 @@ body.signedin .sOut{
 	color: #2c2c2c;
 	text-align: left;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 1.375em;
 	-webkit-flex-flow: row;
 	flex-flow: row;
 	align-items: center;
@@ -55,7 +55,7 @@ body.signedin .sOut{
 .ongoing span.time-left,
 .past-decision .time-left {
 	font-weight: normal;
-	font-size: 18px;
+	font-size: .818181818em;
 }
 
 .ongoing span.time-left {
@@ -78,11 +78,11 @@ body.signedin .sOut{
 }
 
 .ongoing span.icon {
-	margin-right: 15px;
+	margin-right: .9375rem;
 	width: 40px;/* has to be chaned*/
 	height: 20px;
 	text-align: center;
-	-webkit-flex-shrink;
+	-webkit-flex-shrink: 0;
 	flex-shrink: 0;
 }
 
@@ -141,7 +141,7 @@ li.criteria {
 li.criteria span {
 	color: red;
 	font-weight: 100;
-	font-size: 21px;
+	font-size: .954545455em;
 }
 
 li.criteria.active {
@@ -162,7 +162,7 @@ li.criteria.active span {
 color: #820707;
 }
 
-.decision-past {
+/*.decision-past {
 	margin-bottom: 5rem;
 	color: white;
 }
@@ -177,4 +177,5 @@ color: #820707;
 	font-weight: bold;
 	font-size: 100px;
 }
-
+*/
+/* can't find the classes in the HTML file*
