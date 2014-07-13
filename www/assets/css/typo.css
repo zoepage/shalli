@@ -1,23 +1,25 @@
+
+
 body {
 	font-family: "effra", Arial, Helvetica, sans-serif !important;
 	font-size: 16px;
 }
 
 h1, h2, h3 {
-  font-weight: bold;
-  font-family: "effra", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-family: "effra", Arial, Helvetica, sans-serif;
 }
 
 /* shalli logo on homepage */
 h1 {
-  font-size: 6.25em;
-  margin-top: 115px;
+	font-size: 6.25em;
+	margin-top: 7.1875rem;
 }
 
 /* eg: Signing up just takes a second */
 h2 {
-  font-size: 1.75em;
-  font-weight: 900;
+	font-size: 1.75em;
+	font-weight: 900;
 }
 
 /* shalli logo anywhere else */
@@ -27,14 +29,14 @@ h2.small {
 }
 
 .decision-list h2 {
-	margin-top: 85px;
+	margin-top: 5.3125rem;
 }
 
 .slogan {
   font-size: 2em;
   font-weight: 100;
-  margin-top: 25px;
-	margin-bottom: 50px;
+  margin-top: 1.5625rem;
+	margin-bottom: 3.125rem;
 }
 
 h4 {
@@ -47,11 +49,11 @@ p {
 	font-size: 1.375em;
 	font-weight: normal;
 	line-height: 1.3em;
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 }
 
 p.small {
-	font-size: 16px;
+	font-size: 1em;
 }
 
 nav {
