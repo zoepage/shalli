@@ -11,7 +11,7 @@ body.signedin .sOut{
 
 /* dashboard: ongoing list-style */
 .decision-list {
-	margin-top: 85px;
+	margin-top: 5.3125rem;
 }
 
 .decision-list .green {
@@ -20,12 +20,12 @@ body.signedin .sOut{
 }
 
 .decision-list .create-button-link {
-	margin-top: 15px;
+	margin-top: .9375rem;
 }
 
 .ongoing,
 .past-decision {
-	margin: 20px auto;
+	margin: 1.25rem auto;
 }
 
 .ongoing .title a {
@@ -35,15 +35,18 @@ body.signedin .sOut{
 
 .ongoing li,
 .past-decision li {
+	display: -webkit-flex;
 	display: flex;
-	padding: 35px 0;
+	padding: 2.1875rem 0;
 	border-bottom: 1px solid rgba(101, 101, 101, 0.3);
 	color: #2c2c2c;
 	text-align: left;
 	font-weight: bold;
 	font-size: 22px;
+	-webkit-flex-flow: row;
 	flex-flow: row;
 	align-items: center;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 
@@ -56,7 +59,7 @@ body.signedin .sOut{
 }
 
 .ongoing span.time-left {
-	margin-left: 15px;
+	margin-left: .9375rem;
 	color: #9A9A9A;
 }
 
@@ -71,14 +74,15 @@ body.signedin .sOut{
 
 .past-decision span.title {
 	padding: 0 35px;
-	width: 470px;
+	width: 470px;/* has to be changed*/
 }
 
 .ongoing span.icon {
 	margin-right: 15px;
-	width: 40px;
+	width: 40px;/* has to be chaned*/
 	height: 20px;
 	text-align: center;
+	-webkit-flex-shrink;
 	flex-shrink: 0;
 }
 
@@ -96,7 +100,7 @@ li.yay {
 }
 
 .containerBg {
-	padding: 10px;
+	padding: .625rem;
 }
 
 .containerBg h2.slogan {
@@ -106,27 +110,27 @@ li.yay {
 }
 
 .containerBg h2.small {
-	margin-top: 95px;
+	margin-top: 5.9375rem;
 	font-weight: 500;
 }
 
 .containerBg ul li .title {
-	width: 433px;
+	width: 433px;/*has to be fixed*/
 }
 
 .containerBg ul li:first-child {
-	margin-top: 60px;
+	margin-top: 3.75rem;
 }
 
 .containerBg ul li:last-child {
-	margin-top: 10px;
-	margin-bottom: 105px;
+	margin-top: .625rem;
+	margin-bottom: 6.5625rem;
 }
 
 .containerBg ul li button {
 	position: absolute;
-	margin-top: 31px;	
-	margin-left: -17px; 
+	margin-top: 1.9375rem;
+	margin-left: -1.0625rem;
 }
 
 li.criteria {
@@ -159,7 +163,7 @@ color: #820707;
 }
 
 .decision-past {
-	margin-bottom: 80px;
+	margin-bottom: 5rem;
 	color: white;
 }
 
