@@ -1,5 +1,6 @@
 body {
-  font-family: "effra", Arial, Helvetica, sans-serif !important;
+	font-family: "effra", Arial, Helvetica, sans-serif !important;
+	font-size: 16px;
 }
 
 h1, h2, h3 {
@@ -9,19 +10,19 @@ h1, h2, h3 {
 
 /* shalli logo on homepage */
 h1 {
-  font-size: 100px;
+  font-size: 6.25em;
   margin-top: 115px;
 }
 
 /* eg: Signing up just takes a second */
 h2 {
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: 900;
 }
 
 /* shalli logo anywhere else */
 h2.small {
-	font-size: 36px;
+	font-size: 2.25em;
 	font-weight: 300;
 }
 
@@ -30,7 +31,7 @@ h2.small {
 }
 
 .slogan {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 100;
   margin-top: 25px;
 	margin-bottom: 50px;
@@ -42,24 +43,24 @@ h4 {
 
 /* random text */
 p {
-  text-align: center;
-  font-size: 22px;
-  font-weight: normal;
-  line-height: 1.3em;
-  margin-bottom: 40px;
+	text-align: center;
+	font-size: 1.375em;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin-bottom: 40px;
 }
 
 p.small {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 nav {
-  font-weight: bold;
-  text-transform: uppercase;
+	font-weight: bold;
+	text-transform: uppercase;
 /*  color: $grey; */
-  font-size: 22px;
+	font-size: 1.375em;
 }
 
-	.greenBg ul li {
-		font-weight: 300;
-	}
+.greenBg ul li {
+	font-weight: 300;
+}
