@@ -18,9 +18,15 @@
 @import "icon.css"; 	// all the icons you use
 */
 
+* {
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+}
 
 #wrapper {
-  width: 100%;
-  max-width: 720px;
-  margin: 2% auto; 
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	padding-left: 1em;
+	padding-right: 1em;
 }
