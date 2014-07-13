@@ -4,31 +4,31 @@
 
 
 .container {
-  margin-top: 40px;
-  text-align: center;
-  max-width: 720px;
-  width: 100%;
+	margin-top: 40px;
+	text-align: center;
+	max-width: 720px;
+	width: 100%;
 }
 
-	.hoodie-accountbar {
-	  position: absolute;
-	  top: -30px;
-	  right: 0;
+.hoodie-accountbar {
+	position: absolute;
+	top: -30px;
+	right: 0;
+}
+
+.content {
+	padding-bottom: 25px;
 	}
 
+.copy {
+	background-color:  #f1f1f1;
+}
 
-	.content {
-		padding-bottom: 25px;
-	}
+.copy p {
+	padding: 10px 0;
+	text-align: center;
+}
 
-	.copy {
-		background-color:  #f1f1f1;
-	}
-
-		.copy p {
-		  padding: 10px 0;
-		  text-align: center;
-		}
 .clear {
 	clear: both;
 }
