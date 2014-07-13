@@ -1,152 +1,152 @@
+
+
 input[type=text], input[type=password], input[type=email], textarea {
-  font-size: 20px;
-  font-weight: 100;
-  color: #9A9A9A;
-  padding: 15px 10px;
-  border: none;
-  text-align: center;
-  font-family: "effra", Arial, Helvetica, sans-serif !important;
+	font-size: 1.25em;
+	font-weight: 100;
+	color: #9A9A9A;
+	padding: .9375rem .625rem;
+	border: none;
+	text-align: center;
+	font-family: "effra", Arial, Helvetica, sans-serif !important;
 }
 
 input[type=text], input[type=email], input[type=password] {
-  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+	border-bottom: 1px solid rgba(101, 101, 101, 0.3);
 }
 
 #pw2 {
-  border: none;
+	border: none;
 }
 
 input[type='submit'],
 button,
 .create-button-link a {
-  padding: 7px 20px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: white;
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 10px;
-  cursor: pointer;
-  letter-spacing: 0.1em;
+	padding: .4375rem 1.25rem;
+	border-radius: 3.125rem;
+	background: white;
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-top: .625rem;
+	cursor: pointer;
+	letter-spacing: 0.1em;
 }
 
+/* Do we need this styles?*/
 .create-button-link a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #50E38F;
+	font-size: 18px;
+	text-decoration: none;
+	color: #50E38F;
 }
 
 input[type="checkbox"] {
-  display: none;
+	display: none;
 }
 
 input[type="checkbox"] + label span {
-  display: inline-block;
-  width: 25px;
-  height: 20px;
-  padding: 7px 20px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: white;
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 10px;
-  cursor: pointer;
-  letter-spacing: 0.1em;
-  border: 4px solid #E35050;
-  background: url(../img/check-mark.png) no-repeat; 
-  background-position: 18px 5px;
-  background-size: 50%;
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	padding: .4375rem 1.25rem;
+	border-radius: 3.125rem;
+	background: white;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: .625rem;
+	cursor: pointer;
+	letter-spacing: 0.1em;
+	border: 4px solid #E35050;
+	background: url(../img/check-mark.png) no-repeat; 
+	background-position: 18px 5px;
+	background-size: 50%;
 }
+
 input[type="checkbox"]:checked + label span {
-  background-color: #E35050;
-  background-position: 18px -17px;
+	background-color: #E35050;
+	background-position: 18px -17px;
 }
 
-  .active input[type="checkbox"] + label span {
-    border-color: white;
-    background-position: 18px -17px;
-  }
+.active input[type="checkbox"] + label span {
+	border-color: white;
+	background-position: 18px -17px;
+}
 
-  input[type=submit].green,
-  .create-button-link.green a,
-  button.green {
-    border: 4px solid #50E38F;
-  }
-  
-  input[type=submit]:hover.green,
-  button:hover.green  {
-    background-color: #50E38F;
-    color: white;
-  }
-  
-  input[type=submit].red,
-  button.red {
-    border: 4px solid #E35050;
-  }
- 
-  input[type=submit]:hover.red,
-  button:hover.red{
-      background-color: #E35050;
-      color: white;
-  }
+input[type=submit].green,
+.create-button-link.green a,
+	button.green {
+	border: 4px solid #50E38F;
+}
 
-  button:focus,
-  input:focus,
-  textarea:focus {
-    outline: none;
-    outline: 0; 
-    background-color: #fafafa;
-    border: 0 none;
-  }
+input[type=submit]:hover.green,
+button:hover.green  {
+	background-color: #50E38F;
+	color: white;
+}
 
-  #newDecision {
-    text-align: center;
+input[type=submit].red,
+button.red {
+	border: 4px solid #E35050;
+}
 
-  }
+input[type=submit]:hover.red,
+button:hover.red{
+	background-color: #E35050;
+	color: white;
+}
 
-  #newDecision input,
-  #newDecision textarea {
-    width: 360px;
-  }
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+	outline: 0; 
+	background-color: #fafafa;
+	border: 0 none;
+}
 
-  #newDecision textarea {
-    height: 120px;
-  }
+#newDecision {
+	text-align: center;
+}
 
-  #newDecision button[type=submit].green {
-    margin-top: 65px;
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: 0.05em;
-  }
-  
-  input[type=submit].white,
-  button.white {
-    border: 4px solid white;
-    color: white;
-    background-color: transparent; 
-  }
-  input[type=submit]:hover.white,
-  button:hover.white{
-      background-color: white;
-      color: #50E38F;
-    
-  }
+#newDecision input,
+#newDecision textarea {
+	width: 360px;
+}
 
-  .bd {
-    margin-top: 20px;
-  }
+#newDecision textarea {
+	height: 120px;
+}
+
+#newDecision button[type=submit].green {
+	margin-top: 4.0625rem;
+	font-size: 30px;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+}
+
+input[type=submit].white,
+button.white {
+	border: 4px solid white;
+	color: white;
+	background-color: transparent; 
+}
+
+input[type=submit]:hover.white,
+button:hover.white {
+	background-color: white;
+	color: #50E38F;
+}
+
+.bd {
+	margin-top: 1.25rem;
+}
+
 input[type=radio] {
-  display: none;  
+	display: none;
 }
 
 .sample-criteria input[type=text] {
-    text-align: left;
+	text-align: left;
 }
 
 #login button[type=submit] {
-  margin: 20px 0;
+	margin: 1.25rem 0;
 }
