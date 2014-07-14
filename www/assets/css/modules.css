@@ -128,6 +128,7 @@ li.yay {
 }
 
 .containerBg ul li button {
+	min-width: 4.375rem;
 	position: absolute;
 	margin-top: 1.9375rem;
 	margin-left: -1.0625rem;
