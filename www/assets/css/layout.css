@@ -11,9 +11,8 @@
 }
 
 .hoodie-accountbar {
-	position: absolute;
-	top: -1.875rem;
-	right: 0;
+	float: right;
+	margin-top: .9375rem;
 }
 
 .content {
