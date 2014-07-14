@@ -108,7 +108,8 @@ textarea:focus {
 
 #newDecision input,
 #newDecision textarea {
-	width: 360px;
+	width: 100%;
+	max-width: 360px;
 }
 
 #newDecision textarea {
