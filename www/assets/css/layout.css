@@ -19,14 +19,16 @@
 	padding-bottom: 1.5625rem;
 }
 
+/* can't find those classes
 .copy {
-	background-color:  #f1f1f1;
+	background-color: #f1f1f1;
 }
 
 .copy p {
 	padding: .625rem 0;
 	text-align: center;
 }
+*/
 
 .clear {
 	clear: both;
@@ -42,6 +44,7 @@
 
 .whiteBg .container h2.dark-grey,
 .whiteBg .container p {
-	width: 470px;
+	width: 100%;
+	max-width: 470px;
 	margin: 0 auto 1.875rem;
 }
