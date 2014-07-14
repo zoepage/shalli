@@ -162,7 +162,7 @@ li.criteria.active span {
 color: #820707;
 }
 
-/*.decision-past {
+.decision-past {
 	margin-bottom: 5rem;
 	color: white;
 }
@@ -177,5 +177,3 @@ color: #820707;
 	font-weight: bold;
 	font-size: 100px;
 }
-*/
-/* can't find the classes in the HTML file*
