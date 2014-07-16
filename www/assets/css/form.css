@@ -8,6 +8,13 @@ input[type=text], input[type=password], input[type=email], textarea {
 	border: none;
 	text-align: center;
 	font-family: "effra", Arial, Helvetica, sans-serif !important;
+	width: 100%;
+}
+
+@media (min-width: 25.0625em) {
+	input[type=text], input[type=password], input[type=email], textarea {
+		width: auto;
+	}
 }
 
 input[type=text], input[type=email], input[type=password] {
@@ -121,6 +128,13 @@ textarea:focus {
 	font-size: 30px;
 	font-weight: 900;
 	letter-spacing: 0.05em;
+	width: 100%;
+}
+
+@media (min-width: 25.0625em) {
+	#newDecision button[type=submit].green {
+		width: auto;
+	}
 }
 
 input[type=submit].white,
@@ -150,4 +164,11 @@ input[type=radio] {
 
 #login button[type=submit] {
 	margin: 1.25rem 0;
+	width: 100%;
+}
+
+@media (min-width: 25.0625em) {
+	#login button[type=submit] {
+		width: auto;
+	}
 }

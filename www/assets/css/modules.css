@@ -17,6 +17,13 @@ body.signedin .sOut{
 .decision-list .green {
 	position: relative;
 	float: right;
+	width: 100%;
+}
+
+@media (min-width: 25.0625em) {
+	.decision-list .green {
+		width: auto;
+	}
 }
 
 .decision-list .create-button-link {
